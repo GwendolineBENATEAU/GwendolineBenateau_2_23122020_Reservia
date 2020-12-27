@@ -1,0 +1,62 @@
+/* Commentaire */
+@font-face
+
+body
+{
+    
+}
+
+
+
+/* positionnement des éléments dans le header */
+#header 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgba(34, 41, 229, 0.53);
+}
+
+/* marges du logo */
+#logo 
+{
+    margin-left: 2px;
+}
+
+/* positionnements et particularités du menu de navigation */
+#menu
+{
+    width: 460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*background-color: #dddddd;*/
+
+}
+
+#menu li
+{
+    list-style: none;
+    /*background-color: #0b0404;*/
+
+}
+#menu a
+{
+
+    text-decoration: none;     
+    padding: 30px;
+
+}
+
+
+/* Barre bleue au survol des élements du menu de navigation */
+#menu a:hover
+{
+
+    border-top: 2px solid #0065FC;
+    padding-top: 50px;
+
+}
+
+
+
