@@ -13,7 +13,7 @@ body
     font-family: 'Raleway', Arial, sans-serif;
     color: black;
     background-color: white;
-    margin: 50px;
+    margin: 0px;
     padding: 0px;
    
 }
@@ -25,6 +25,7 @@ body
 {
     display: flex;
     justify-content: space-between;  
+    margin: 50px;
     padding-bottom: 10px;
 }
 
@@ -40,7 +41,6 @@ body
     /*background-color: aqua;*/
     width: 440px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 0;
 }
@@ -83,6 +83,38 @@ body
     border-top: 2px solid #0065FC;
     padding-top: 50px;
     color: #0065FC;
+}
+
+/*--------------------------- FOOTER ---------------------------*/
+/* positionnement des éléments dans le footer */
+#footer 
+{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    
+    
+}
+
+#footer a
+{
+    text-decoration: none;
+    color: black;
+}
+#footer ul
+{
+    padding: 0;
+}
+#footer li
+{
+    list-style: none;
+}
+.footer_section
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-left: 50px;
 }
 
 
