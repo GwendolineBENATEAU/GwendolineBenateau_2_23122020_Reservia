@@ -92,6 +92,9 @@ body
     display: flex;
     justify-content: flex-start;
     background-color: #F2F2F2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
     
     
 }
@@ -108,6 +111,7 @@ body
 #footer li
 {
     list-style: none;
+    padding: 8px;
 }
 .footer_section
 {
@@ -115,6 +119,7 @@ body
     flex-direction: column;
     width: 400px;
     padding-left: 50px;
+    /*background-color: coral;*/
 }
 
 
