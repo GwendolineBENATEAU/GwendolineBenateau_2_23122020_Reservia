@@ -2,13 +2,12 @@
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
+    font-size: 14px;
     color: black;
     background-color: white;
     margin: 0px;
     padding: 0px;
-
 }
-
 
 /*--------------------------- HEADER + NAV ---------------------------*/
 /* positionnement des éléments dans le header */
@@ -17,12 +16,6 @@ body
     display: flex;
     justify-content: space-between;  
     margin: 40px 50px 33px 50px;
-}
-
-/* marges du logo */
-#logo 
-{
-    margin-left: 2px;
 }
 
 /* positionnements du menu de navigation */
@@ -79,7 +72,40 @@ body
 
 
 
+
+
+
+
+
+
 /*--------------------------- MAIN ---------------------------*/
+
+
+main
+{
+   margin: 0px 50px 0px 50px;
+}
+
+main h2
+{
+    background-color: aqua;
+    margin: 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
