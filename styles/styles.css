@@ -2,7 +2,7 @@
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     background-color: white;
     margin: 0px;
@@ -15,7 +15,7 @@ body
 {
     display: flex;
     justify-content: space-between;  
-    margin: 40px 50px 33px 50px;
+    margin: 40px 50px 35px 50px;
 }
 
 /* positionnements du menu de navigation */
@@ -33,7 +33,6 @@ body
 {
     color: #0065FC;
     font-weight: 900;
-    font-size: 16px;
 }
 #menu a:hover#signup
 {
@@ -90,11 +89,24 @@ main h2
 {
     background-color: aqua;
     margin: 0;
-    
 }
 
+main p
+{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
 
+#filtres {
+    background-color: burlywood;
+    display: flex;
+}
 
+.filtres {
+    background-color: chocolate;
+    display: flex;
+    flex-direction: row;
+}
 
 
 
