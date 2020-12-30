@@ -15,7 +15,7 @@ body
     background-color: white;
     margin: 0px;
     padding: 0px;
-   
+
 }
 
 
@@ -85,6 +85,31 @@ body
     color: #0065FC;
 }
 
+
+
+
+
+/*--------------------------- MAIN ---------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------- FOOTER ---------------------------*/
 /* positionnement des éléments dans le footer */
 #footer 
@@ -93,12 +118,9 @@ body
     justify-content: flex-start;
     background-color: #F2F2F2;
     padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: 500;
-    
-    
+    padding-bottom: 25px;
 }
-
+/* particularités générales du footer */
 #footer a
 {
     text-decoration: none;
@@ -112,14 +134,20 @@ body
 {
     list-style: none;
     padding: 8px;
+    font-weight: 500;
 }
+#footer strong
+{
+    font-size: 18px;
+}
+/* positionnement des 3 div dans le footer */
 .footer_section
 {
+    /*background-color: coral;*/
     display: flex;
     flex-direction: column;
     width: 400px;
     padding-left: 50px;
-    /*background-color: coral;*/
 }
 
 
