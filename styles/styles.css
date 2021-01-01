@@ -98,9 +98,8 @@ margin: 0px 50px 0px 50px;
 /*champs de recherche en 3 parties*/
 #recherche
 {
-    /*background-color: aqua;*/
+    
     width: 420px;
-    height: 50px;
     margin: 0px 50px 0px 53px;
     font-size: 18px;
     display: flex;
@@ -131,6 +130,19 @@ input::placeholder
 {
     color: black;
     font-weight: 900;
+    font-size: 18px;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+#recherche button
+{
+    width: 135px;
+    height: 50px;
+    border-style: none;
+    background-color: #0065FC;
+    border-radius: 0px 13px 13px 0px;
+    color: white;
+    font-weight: bold;
     font-size: 18px;
     font-family: 'Raleway', Arial, sans-serif;
 }
