@@ -88,13 +88,14 @@ body
 /*---------- SECTION RECHERCHE ----------*/
 #sectionrecherche header h2
 {
-    /*background-color: aqua;*/
+    background-color: aqua;
     margin: 0px 50px 0px 55px;
+    font-weight: 
 }
 
 #sectionrecherche header p
 {
-    background-color: aqua;
+    /*background-color: palevioletred;*/
     margin-top: 10px;
     margin-bottom: 40px;
 }
