@@ -15,7 +15,7 @@ body
 {
     display: flex;
     justify-content: space-between;  
-    margin: 40px 50px 35px 52px;
+    margin: 40px 50px 34px 52px;
 }
 
 /* positionnements du menu de navigation */
@@ -82,26 +82,49 @@ body
 
 /*main
 {
-   margin: 0px 50px 0px 50px;
+margin: 0px 50px 0px 50px;
 }*/
 
 /*---------- SECTION RECHERCHE ----------*/
 #sectionrecherche header h2
 {
-    background-color: aqua;
     margin: 0px 50px 0px 55px;
-    font-weight: 
+    font-size: 22px;
+    font-weight: 900;
 }
 
 #sectionrecherche header p
 {
-    /*background-color: palevioletred;*/
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin: 8px 50px 35px 55px;
+    font-size: 16px;    
 }
+
+#recherche
+{
+    margin: 0px 50px 0px 53px;
+    font-size: 18px;
+    width: 420px;
+    height: 51px;
+    border-style: solid;           
+    border-width: 1px; 
+    border-color: #F2F2F2;
+    border-radius: 13px;
+}
+
+/*#recherche i
+{
+
+height: 51px;
+width: 100px;
+border-style: solid;
+border-color: #F2F2F2;
+background-color: #F2F2F2;
+border-radius: 10px 0px 10px 0px;
+}*/
 
 #filtres {
     background-color: burlywood;
+    margin: 50px;
     display: flex;
 }
 
