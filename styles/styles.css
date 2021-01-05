@@ -32,7 +32,7 @@ body
 #menunav #signup
 {
     color: #0065FC;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 #menunav a:hover#signup
@@ -87,6 +87,7 @@ margin: 0px 50px 0px 50px;
 {  
     margin: 0px 50px 0px 55px;
     font-size: 22px;
+    font-weight: 800
 }
 
 #sectionrecherche header p
@@ -129,7 +130,7 @@ margin: 0px 50px 0px 50px;
 input::placeholder 
 {
     color: black;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 18px;
     font-family: 'Raleway', Arial, sans-serif;
 }
@@ -241,6 +242,7 @@ input::placeholder
 #footerpage strong
 {
     font-size: 18px;
+    font-weight: 800
 }
 /* positionnement des 3 div dans le footer */
 .footer_section
