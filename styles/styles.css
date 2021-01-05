@@ -2,76 +2,71 @@
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
+    font-size: 16px;
     color: black;
     background-color: white;
     margin: 0px;
     padding: 0px;
-
 }
-
 
 /*--------------------------- HEADER + NAV ---------------------------*/
 /* positionnement des éléments dans le header */
-#header 
+#headerpage 
 {
     display: flex;
     justify-content: space-between;  
-    margin: 40px 50px 33px 50px;
-}
-
-/* marges du logo */
-#logo 
-{
-    margin-left: 2px;
+    margin: 40px 50px 34px 52px;
 }
 
 /* positionnements du menu de navigation */
-#menu
+#menunav
 {
     /*background-color: aqua;*/
-    width: 440px;
+    width: 435px;
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
 
 /* particularités de l'élément 'S'incrire' du menu de navigation */
-#menu #signup
+#menunav #signup
 {
     color: #0065FC;
-    font-weight: 900;
-    font-size: 16px;
+    font-weight: 700;
 }
-#menu a:hover#signup
+
+#menunav a:hover#signup
 {
     border-top: 0px;
     color: #0065FC;
 }
 
 /* particularités générales du menu de navigation */
-#menu li
+#menunav li
 {
     /*background-color: grey;*/
     list-style: none;
     font-weight: 500;
     font-size: 16px;
 }
-#menu a
+
+#menunav a
 {
     text-decoration: none;
     color: black;
     padding: 30px;
 }
-#menu a:visited
+
+#menunav a:visited
 {
     color: black;
 }
 
 /* Barre bleue au survol des élements du menu de navigation */
-#menu a:hover
+#menunav a:hover
 {
     border-top: 2px solid #0065FC;
-    padding-top: 50px;
+    padding-top: 45px;
     color: #0065FC;
 }
 
@@ -80,6 +75,124 @@ body
 
 
 /*--------------------------- MAIN ---------------------------*/
+
+
+/*main
+{
+margin: 0px 50px 0px 50px;
+}*/
+
+/*---------- SECTION RECHERCHE + FILTRES ----------*/
+#sectionrecherche header h2
+{  
+    margin: 0px 50px 0px 55px;
+    font-size: 22px;
+    font-weight: 800
+}
+
+#sectionrecherche header p
+{
+    margin: 8px 50px 20px 55px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*champs de recherche en 3 parties*/
+#recherche
+{
+    width: 420px;
+    margin: 0px 50px 0px 53px;
+    font-size: 18px;
+    display: flex;
+}
+
+#recherche div
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    border-radius: 13px 0px 0px 13px;
+}
+
+#recherche input
+{
+    width: 218px;
+    height: 48px;
+    padding: 0px 0px 0px 17px;
+    border-style: solid;            
+    border-width: 1px;  
+    border-color: #F2F2F2; 
+}
+
+input::placeholder 
+{
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+#recherche button
+{
+    width: 135px;
+    height: 50px;
+    border-style: none;
+    background-color: #0065FC;
+    border-radius: 0px 13px 13px 0px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+/*ligne des filtres*/
+#filters 
+{
+    background-color: burlywood;
+    margin: 25px 50px 30px 63px;
+    width: 930px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters
+{
+    background-color: chocolate;
+    width: 190px;
+    display: flex;
+    align-items: center;
+}
+
+.filters div
+{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+}
+
+.fas fa-money-bill-wave
+{
+    color: aqua;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -102,7 +215,7 @@ body
 
 /*--------------------------- FOOTER ---------------------------*/
 /* positionnement des éléments dans le footer */
-#footer 
+#footerpage 
 {
     display: flex;
     justify-content: flex-start;
@@ -111,24 +224,25 @@ body
     padding-bottom: 25px;
 }
 /* particularités générales du footer */
-#footer a
+#footerpage a
 {
     text-decoration: none;
     color: black;
 }
-#footer ul
+#footerpage ul
 {
     padding: 0;
 }
-#footer li
+#footerpage li
 {
     list-style: none;
-    padding: 8px;
+    padding: 8px 0px;
     font-weight: 500;
 }
-#footer strong
+#footerpage strong
 {
     font-size: 18px;
+    font-weight: 800
 }
 /* positionnement des 3 div dans le footer */
 .footer_section
@@ -139,6 +253,16 @@ body
     width: 400px;
     padding-left: 50px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

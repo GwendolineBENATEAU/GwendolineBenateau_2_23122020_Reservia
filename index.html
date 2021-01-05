@@ -9,19 +9,21 @@
 
         <!--Liaison vers une police externe Raleway-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
         <!--Liaison vers la bibliothèque externe d'icônes FontAwesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     </head>
 
     <body>
 
         <!----------------------- HEADER + NAV ----------------------->
-        <header id="header">
+        <header id="headerpage">
             <img id="logo" src="images/Reservia.svg" alt="reservia logo">
 
             <nav>
-                <ul id="menu">
+                <ul id="menunav">
                     <li><a href="#hebergements">Hébergements</a></li>
                     <li><a href="#activites">Activités</a></li>
                     <li><a id="signup" href="#">S'inscrire</a></li>
@@ -32,19 +34,47 @@
         <!----------------------- MAIN ----------------------->
         <main>
 
-            <!--------- SECTION RECHERCHE --------->
+            <!--------- SECTION RECHERCHE + FILTRES --------->
             <section id="sectionrecherche">
                 <header>
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre ville ou en pleine nature</p>
                 </header>
 
-                <form role="search">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" id="recherche" placeholder="Marseille, France" aria-label="Rechercher dans la ville de votre choix">
+                <form id="recherche" role="search">
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <input type="text" placeholder="ex : Marseille, France" aria-label="Rechercher des hébergements dans la ville de votre choix">
                     <button>Rechercher</button>
                 </form>
+
+                <div id="filters">
+                    <div>
+                        <h3>Filtres</h3>
+                    </div>
+                    <div class="filters">
+                        <div><i class="fas fa-money-bill-wave"></i></div>
+                        <h3>&Eacute;conomique</h3>
+                    </div>
+                    <div class="filters">
+                        <div><i class="fas fa-child"></i></div>
+                        <h3>Familial</h3>
+                    </div>
+                    <div class="filters">
+                        <div><i class="fas fa-heart"></i></div>
+                        <h3>Romantique</h3>
+                    </div>
+                    <div class="filters">
+                        <div><i class="fas fa-dog"></i></div>
+                        <h3>Animaux autorisés</h3>
+                    </div>
+                </div>
+
+                <footer id="information">
+                    <i class="fas fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </footer>
             </section>
+
 
             <!--------- SECTION HEBERGEMENT --------->
             <h2 id="hebergements">Hébergements à Marseille</h2>
@@ -61,7 +91,7 @@
 
 
         <!----------------------- FOOTER ----------------------->
-        <footer id="footer">
+        <footer id="footerpage">
             <div class="footer_section" >
                 <ul>
                     <li><strong>A propos</strong></li>
