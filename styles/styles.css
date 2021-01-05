@@ -122,9 +122,7 @@ margin: 0px 50px 0px 50px;
     width: 218px;
     height: 48px;
     padding: 0px 0px 0px 17px;
-    border-style: solid;            
-    border-width: 1px;  
-    border-color: #F2F2F2; 
+    border : 1px solid #F2F2F2; 
 }
 
 input::placeholder 
@@ -152,7 +150,7 @@ input::placeholder
 #filters 
 {
     background-color: burlywood;
-    margin: 25px 50px 30px 63px;
+    margin: 31px 0px 0px 63px;
     width: 930px;
     height: 50px;
     display: flex;
@@ -163,9 +161,13 @@ input::placeholder
 .filters
 {
     background-color: chocolate;
-    width: 190px;
+    width: auto;
+    height: 46px;
     display: flex;
     align-items: center;
+    justify-content: space-a;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
 }
 
 .filters div
@@ -176,10 +178,12 @@ input::placeholder
     color: #0065FC;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #DEEBFF;
     border-radius: 100%;
+    margin-left: -2px;
 }
+
 
 .fas fa-money-bill-wave
 {
