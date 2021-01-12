@@ -261,6 +261,7 @@ input::placeholder
     font-weight: 800;
     margin: 0;
     padding-left: 1px;
+    padding-bottom: 23px;
 }
 
 
@@ -281,11 +282,20 @@ input::placeholder
     height: 190px;
     background-color: #FFF;
     border-radius: 20px;
-    border: 5px solid #FFF;
+    border: 5px solid #FFF; 
 }
 
+.cardhebergement a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
 
-
+.cardhebergement img
+{
+    border-radius: 15px 15px 0px 0px;
+}
 
 
 
@@ -348,6 +358,10 @@ input::placeholder
     width: 400px;
     padding-left: 50px;
 }
+
+
+
+
 
 
 
