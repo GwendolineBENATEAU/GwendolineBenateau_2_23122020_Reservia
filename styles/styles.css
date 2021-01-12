@@ -83,7 +83,7 @@ body
 {  
     margin: 0px 50px 0px 55px;
     font-size: 22px;
-    font-weight: 800
+    font-weight: 800;
 }
 
 #sectionrecherche header p
@@ -110,7 +110,7 @@ body
     align-items: center;
     justify-content: space-around;
     background-color: #F2F2F2;
-    border-radius: 13px 0px 0px 13px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 #recherche input
@@ -195,7 +195,7 @@ input::placeholder
 .filters:hover
 {
     box-shadow: 0px 0px 10px 10px #F2F2F2;
-    transition: 0.5s ease-out;
+    transition: 0.3s ease-out;
     height: 55px;
 }
 
@@ -227,6 +227,31 @@ input::placeholder
     font-weight: 500;
 }
 
+/*---------- SECTION HEBERGEMENT ----------*/
+
+#sectionhebergement
+{
+    margin: 37px 50px 64px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#sectionhebergement h2
+{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.containersection
+{
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+
+}
+.containercard
+{
+    display: flex;
+}
 
 
 
