@@ -272,8 +272,7 @@ input::placeholder
     display: flex;
     justify-content: space-between;
     align-content: space-between;
-    flex-wrap: wrap;
-    background-color: aqua;   
+    flex-wrap: wrap;   
 }
 
 .cardhebergement
@@ -283,7 +282,6 @@ input::placeholder
     background-color: #FFF;
     border-radius: 20px;
     border: 5px solid #FFF;
-    background-color: brown;
 }
 
 
