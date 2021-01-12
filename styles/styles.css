@@ -264,6 +264,14 @@ input::placeholder
     padding-bottom: 23px;
 }
 
+#sectionhebergement h3
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 4px;
+}
 
 /*carte d'hébergement*/
 #container-cardhebergement 
@@ -296,7 +304,7 @@ input::placeholder
     border-radius: 15px 15px 0px 0px;
 }
 
-.text-cardhebergement h3, .text-cardhebergement p
+.text-cardhebergement h4, .text-cardhebergement p
 {
     margin: 0;
 }
@@ -311,13 +319,29 @@ input::placeholder
     font-size: 14px;
 }
 
-.text-cardhebergement h3
+.text-cardhebergement h4
 {
     font-size: 16px;
     font-weight: 800;
 }
 
- .star
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*étoiles de notation*/
+ .star 
 {
     color: #0065FC;
     width: 70px;
@@ -326,9 +350,9 @@ input::placeholder
     font-size: 12px;
 }
 
-.star i:last-child 
+.star>.off 
 {
-  color: #F2F2F2;
+  color: #D9D9D9;
 }
 
 
@@ -383,4 +407,7 @@ input::placeholder
     width: 400px;
     padding-left: 50px;
 }
+
+
+
 
