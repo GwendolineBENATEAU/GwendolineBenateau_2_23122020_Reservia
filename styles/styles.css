@@ -232,26 +232,37 @@ input::placeholder
 #sectionhebergement
 {
     margin: 37px 50px 64px 50px;
+    width: 1340px;
+    height: 626px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
+
+#sectionhebergement article
+{
+    width: 800px;
+}
+
+#sectionhebergement aside
+{
+    width: 340px;
+}
+
 #sectionhebergement h2
 {
     font-size: 22px;
     font-weight: 800;
+    margin: 0;
+    padding-left: 1px;
 }
 
 .containersection
 {
-    padding: 20px;
+    padding: 40px;
     background-color: #F2F2F2;
-    border-radius: 20px;
+    border-radius: 20px;    
+}
 
-}
-.containercard
-{
-    display: flex;
-}
 
 
 
