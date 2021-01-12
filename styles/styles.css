@@ -289,7 +289,6 @@ input::placeholder
 {
     text-decoration: none;
     color: black;
-    font-size: 14px;
 }
 
 .cardhebergement img
@@ -297,14 +296,40 @@ input::placeholder
     border-radius: 15px 15px 0px 0px;
 }
 
+.text-cardhebergement h3, .text-cardhebergement p
+{
+    margin: 0;
+}
 
+.text-cardhebergement 
+{
+    padding: 5px 11px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aqua;
+    font-size: 14px;
+}
 
+.text-cardhebergement h3
+{
+    font-size: 16px;
+}
 
+ .star
+{
+    color: #0065FC;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
 
-
-
-
-
+.star i:last-child 
+{
+  color: #F2F2F2;
+}
 
 
 
@@ -358,22 +383,4 @@ input::placeholder
     width: 400px;
     padding-left: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
