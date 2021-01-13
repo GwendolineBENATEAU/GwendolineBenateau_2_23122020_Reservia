@@ -329,7 +329,7 @@ input::placeholder
 {
     border-radius: 15px 15px 0px 0px;
 }
-/*==============================================*/
+
 #containercard1 .textcardstyle 
 {
     padding: 7px 11px;
@@ -340,6 +340,10 @@ input::placeholder
     font-size: 14px;
 }
 
+#containercard1 .star
+{
+    padding-top: 5px;    
+}
 
 /*spécificités aside les plus populaires*/
 #sectionhebergement aside
@@ -385,7 +389,10 @@ input::placeholder
     font-size: 14px;
 }
 
-
+#containercard2 .star
+{
+    padding-top: 30px;    
+}
 
 
 
