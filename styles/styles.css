@@ -282,16 +282,6 @@ input::placeholder
     margin: 0;
 }
 
-.textcardstyle 
-{
-    padding: 7px 11px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
 .textcardstyle h4
 {
     font-size: 16px;
@@ -299,7 +289,7 @@ input::placeholder
 }
 
 /*étoiles de notation*/
- .star 
+.star 
 {
     color: #0065FC;
     width: 70px;
@@ -310,7 +300,7 @@ input::placeholder
 
 .star>.off 
 {
-  color: #D9D9D9;
+    color: #D9D9D9;
 }
 
 /*spécificités article hébergement à Marseille*/
@@ -329,7 +319,7 @@ input::placeholder
     flex-wrap: wrap;   
 }
 
-#containercard1.cardstyle
+#containercard1 .cardstyle
 {
     width: 236px;
     height: 190px;
@@ -339,6 +329,17 @@ input::placeholder
 {
     border-radius: 15px 15px 0px 0px;
 }
+/*==============================================*/
+#containercard1 .textcardstyle 
+{
+    padding: 7px 11px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
 
 /*spécificités aside les plus populaires*/
 #sectionhebergement aside
@@ -346,12 +347,43 @@ input::placeholder
     width: 340px;
 }
 
+#populaires
+{
+    width: 343px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
 
+#containercard2
+{
+    width: 343px;
+    height: 498px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;   
+}
 
+#containercard2 a
+{
+    width: 333px;
+    height: 134px;
+    display: flex;
+}
 
+#containercard2 img
+{
+    border-radius: 15px 0px 0px 15px;
+}
 
-
-
+#containercard2 .textcardstyle 
+{
+    padding: 12px 40px 8px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
 
 
 
