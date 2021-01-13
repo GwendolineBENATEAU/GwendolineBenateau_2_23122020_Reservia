@@ -70,14 +70,8 @@ body
     color: #0065FC;
 }
 
-
-
-
-
 /*--------------------------- MAIN ---------------------------*/
-
-
-/*---------- SECTION RECHERCHE + FILTRES ----------*/
+/*-------- SECTION RECHERCHE + FILTRES --------*/
 /*header de la section*/
 #sectionrecherche header h2
 {  
@@ -228,14 +222,13 @@ input::placeholder
 }
 
 /*---------- SECTION HEBERGEMENT ----------*/
-
 #sectionhebergement
 {
     margin: 37px 50px 64px 50px;
     width: 1340px;
     height: 626px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .containersection
@@ -320,13 +313,7 @@ input::placeholder
     flex-wrap: wrap;   
 }
 
-#containercard1 .cardstyle
-{
-    width: 236px;
-    height: 190px;
-}
-
-#containercard1 .cardstyle img
+#containercard1 img
 {
     border-radius: 15px 15px 0px 0px;
 }
@@ -366,7 +353,7 @@ input::placeholder
     height: 498px;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;   
+    flex-direction: column;     
 }
 
 #containercard2 a
@@ -395,12 +382,41 @@ input::placeholder
     padding-top: 30px;    
 }
 
+/*---------- SECTION ACTIVITES ----------*/
+#sectionactivites
+{
+    margin: 0px 54px 60px 50px;
+    width: 1336px;
+    height: 488px;
+    display: flex;
+    flex-direction: column;
+}
 
+#sectionactivites h2
+{
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+    padding-bottom: 25px;
+}
 
+#containercard3
+{
+    background-color: red;
+    height: 445px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
 
-
-
-
+#containercard3 .cardstyle
+{
+    border: none; 
+}
+#containercard3 img
+{
+    border-radius: 20px 20px 0px 0px;
+}
 
 
 
