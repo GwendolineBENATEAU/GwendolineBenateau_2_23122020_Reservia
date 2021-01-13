@@ -245,17 +245,7 @@ input::placeholder
     border-radius: 20px;    
 }
 
-#sectionhebergement article
-{
-    width: 800px;
-}
-
-#sectionhebergement aside
-{
-    width: 340px;
-}
-
-#sectionhebergement h2
+.containersection h2
 {
     font-size: 22px;
     font-weight: 800;
@@ -264,7 +254,7 @@ input::placeholder
     padding-bottom: 23px;
 }
 
-#sectionhebergement h3
+.containersection h3
 {
     font-size: 18px;
     font-weight: 700;
@@ -273,43 +263,26 @@ input::placeholder
     padding-left: 4px;
 }
 
-/*carte d'hébergement*/
-#container-cardhebergement 
+/*carte d'hébergement style général*/
+.cardstyle
 {
-    width: 800px;
-    height: 430px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;   
-}
-
-.cardhebergement
-{
-    width: 236px;
-    height: 190px;
     background-color: #FFF;
     border-radius: 20px;
     border: 5px solid #FFF; 
 }
 
-.cardhebergement a
+.cardstyle a
 {
     text-decoration: none;
     color: black;
 }
 
-.cardhebergement img
-{
-    border-radius: 15px 15px 0px 0px;
-}
-
-.text-cardhebergement h4, .text-cardhebergement p
+.textcardstyle h4, .textcardstyle p
 {
     margin: 0;
 }
 
-.text-cardhebergement 
+.textcardstyle 
 {
     padding: 7px 11px;
     height: 60px;
@@ -319,26 +292,11 @@ input::placeholder
     font-size: 14px;
 }
 
-.text-cardhebergement h4
+.textcardstyle h4
 {
     font-size: 16px;
     font-weight: 800;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*étoiles de notation*/
  .star 
@@ -354,6 +312,53 @@ input::placeholder
 {
   color: #D9D9D9;
 }
+
+/*spécificités article hébergement à Marseille*/
+#sectionhebergement article
+{
+    width: 800px;
+}
+
+#containercard1
+{
+    width: 800px;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;   
+}
+
+#containercard1.cardstyle
+{
+    width: 236px;
+    height: 190px;
+}
+
+#containercard1 .cardstyle img
+{
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*spécificités aside les plus populaires*/
+#sectionhebergement aside
+{
+    width: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
