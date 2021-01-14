@@ -298,11 +298,6 @@ input::placeholder
 }
 
 /*spécificités article hébergement à Marseille*/
-#sectionhebergement article
-{
-    width: 800px;
-}
-
 #containercard1
 {
     width: 800px;
@@ -334,11 +329,6 @@ input::placeholder
 }
 
 /*spécificités aside les plus populaires*/
-#sectionhebergement aside
-{
-    width: 340px;
-}
-
 #populaires
 {
     width: 343px;
