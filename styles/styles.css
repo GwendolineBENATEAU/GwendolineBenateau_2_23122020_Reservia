@@ -406,13 +406,14 @@ input::placeholder
     height: 445px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 #containercard3 .cardstyle
 {
     border: none; 
 }
+
 #containercard3 img
 {
     border-radius: 20px 20px 0px 0px;
@@ -438,31 +439,35 @@ input::placeholder
     padding-top: 20px;
     padding-bottom: 25px;
 }
+
 /* particularités générales du footer */
 #footerpage a
 {
     text-decoration: none;
     color: black;
 }
+
 #footerpage ul
 {
     padding: 0;
 }
+
 #footerpage li
 {
     list-style: none;
     padding: 8px 0px;
     font-weight: 500;
 }
+
 #footerpage strong
 {
     font-size: 18px;
     font-weight: 800
 }
+
 /* positionnement des 3 div dans le footer */
 .footer_section
 {
-    /*background-color: coral;*/
     display: flex;
     flex-direction: column;
     width: 400px;
