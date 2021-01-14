@@ -398,30 +398,59 @@ input::placeholder
 
 #containercard3
 {
-    background-color: red;
     height: 445px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-content: space-between;
+    flex-flow: column wrap;
 }
-
+/*---------------*/
 #containercard3 .cardstyle
 {
-    border: none; 
+    border: none;   
 }
 
-#containercard3 img
+
+
+
+
+#containercard3 .cardstyle:nth-child(1), #containercard3 .cardstyle:nth-child(4)
+{
+    height: 100%;
+}
+#containercard3 .cardstyle:nth-child(2)
+{
+    height: 53%;
+}
+#containercard3 .cardstyle:nth-child(3)
+{
+    height: 37%;
+}
+#containercard3 .cardstyle:nth-child(5) 
+{
+    height: 44%;
+}
+#containercard3 .cardstyle:nth-child(6) 
+{
+    height: 47%;
+}
+
+
+
+#containercard3 h4
+{
+    margin: 0;
+    padding-left: 20px;
+}
+
+.imageactivites
 {
     border-radius: 20px 20px 0px 0px;
+    width: 302px;
+    height: 87%;
+    object-fit: cover;
+
 }
-
-
-
-
-
-
-
-
 
 
 
