@@ -308,15 +308,18 @@ input::placeholder
     flex-wrap: wrap;   
 }
 
-#containercard1 img
+.imagehebergement1
 {
     border-radius: 15px 15px 0px 0px;
+    height: 113px;
+    width: 236px;
+    object-fit: cover;
 }
 
 #containercard1 .textcardstyle 
 {
     padding: 7px 11px;
-    height: 60px;
+    height: 57px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -353,9 +356,12 @@ input::placeholder
     display: flex;
 }
 
-#containercard2 img
+.imagehebergement2
 {
     border-radius: 15px 0px 0px 15px;
+    height: 134px;
+    width: 127px;
+    object-fit: cover;
 }
 
 #containercard2 .textcardstyle 
