@@ -3,8 +3,8 @@ body
 {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #ffffff;
     width: 1440px;
     margin: auto;
     padding: 0px;
@@ -45,7 +45,6 @@ body
 {
     list-style: none;
     font-weight: 500;
-    font-size: 16px;
 }
 
 #menunav a
@@ -81,7 +80,6 @@ body
 #sectionrecherche header p
 {
     margin: 8px 50px 20px 55px;
-    font-size: 16px;
     font-weight: 500;
 }
 
@@ -113,7 +111,7 @@ body
     border : 1px solid #F2F2F2; 
     font-weight: 800;
     font-size: 18px;
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: inherit;
 }
 
 #recherche input::placeholder 
@@ -132,7 +130,7 @@ body
     color: white;
     font-weight: 600;
     font-size: 18px;
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: inherit;
 }
 
 /*ligne des filtres*/
@@ -212,8 +210,7 @@ body
 
 #information p
 {
-    margin: 0px 0px 0px 12px;;
-    font-size: 16px;
+    margin: 0px 0px 0px 12px;
     font-weight: 500;
 }
 
@@ -274,6 +271,7 @@ body
 
 .textcardstyle h4
 {
+    
     font-size: 16px;
     font-weight: 800;
 }
