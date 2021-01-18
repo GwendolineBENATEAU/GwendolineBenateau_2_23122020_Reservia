@@ -116,12 +116,10 @@ body
     font-family: 'Raleway', Arial, sans-serif;
 }
 
-input::placeholder 
+#recherche input::placeholder 
 {
-    color: black;
-    font-weight: 800;
-    font-size: 18px;
-    font-family: 'Raleway', Arial, sans-serif;
+    color: inherit;
+    opacity:  1;/* For Mozilla Firefox */
 }
 
 #recherche button
