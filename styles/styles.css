@@ -188,9 +188,9 @@ body
 /*changement apparence au survol des filtres*/
 .filters:hover
 {
-    box-shadow: 0px 0px 10px 10px #F2F2F2;
+    box-shadow: 0px 0px 20px 1px #D9D9D9;
     transition: 0.3s ease-out;
-    height: 55px;
+    transform: scale(1.1);
 }
 
 /*ligne information*/
