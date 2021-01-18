@@ -1,11 +1,12 @@
-/*Général*/
+/*Style général du site*/
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
-    color: black;
-    background-color: white;
-    margin: 0px;
+    color: #000000;
+    background-color: #ffffff;
+    width: 1440px;
+    margin: auto;
     padding: 0px;
 }
 
@@ -21,7 +22,6 @@ body
 /* positionnements du menu de navigation */
 #menunav
 {
-    /*background-color: aqua;*/
     width: 435px;
     display: flex;
     justify-content: space-between;
@@ -38,28 +38,25 @@ body
 #menunav a:hover#signup
 {
     border-top: 0px;
-    color: #0065FC;
 }
 
 /* particularités générales du menu de navigation */
 #menunav li
 {
-    /*background-color: grey;*/
     list-style: none;
     font-weight: 500;
-    font-size: 16px;
 }
 
 #menunav a
 {
     text-decoration: none;
-    color: black;
+    color: inherit;
     padding: 30px;
 }
 
 #menunav a:visited
 {
-    color: black;
+    color: inherit;
 }
 
 /* Barre bleue au survol des élements du menu de navigation */
@@ -83,7 +80,6 @@ body
 #sectionrecherche header p
 {
     margin: 8px 50px 20px 55px;
-    font-size: 16px;
     font-weight: 500;
 }
 
@@ -115,15 +111,13 @@ body
     border : 1px solid #F2F2F2; 
     font-weight: 800;
     font-size: 18px;
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: inherit;
 }
 
-input::placeholder 
+#recherche input::placeholder 
 {
-    color: black;
-    font-weight: 800;
-    font-size: 18px;
-    font-family: 'Raleway', Arial, sans-serif;
+    color: inherit;
+    opacity:  1;/* For Mozilla Firefox */
 }
 
 #recherche button
@@ -136,7 +130,7 @@ input::placeholder
     color: white;
     font-weight: 600;
     font-size: 18px;
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: inherit;
 }
 
 /*ligne des filtres*/
@@ -185,12 +179,18 @@ input::placeholder
     padding: 0px 18px 0px 12px;
 }
 
+/* écrasement latéral du picto monnaie*/
+.fa-money-bill-wave 
+{
+    transform: scale(0.7, 1.0);
+}
+
 /*changement apparence au survol des filtres*/
 .filters:hover
 {
-    box-shadow: 0px 0px 10px 10px #F2F2F2;
+    box-shadow: 0px 0px 20px 1px #D9D9D9;
     transition: 0.3s ease-out;
-    height: 55px;
+    transform: scale(1.1);
 }
 
 /*ligne information*/
@@ -216,15 +216,14 @@ input::placeholder
 
 #information p
 {
-    margin: 0px 0px 0px 12px;;
-    font-size: 16px;
+    margin: 0px 0px 0px 12px;
     font-weight: 500;
 }
 
 /*---------- SECTION HEBERGEMENT ----------*/
 #sectionhebergement
 {
-    margin: 37px 50px 64px 50px;
+    margin: 37px 50px 60px 50px;
     width: 1340px;
     height: 626px;
     display: flex;
@@ -268,7 +267,7 @@ input::placeholder
 .cardstyle a
 {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 .textcardstyle h4, .textcardstyle p
@@ -278,6 +277,7 @@ input::placeholder
 
 .textcardstyle h4
 {
+    
     font-size: 16px;
     font-weight: 800;
 }
@@ -381,11 +381,12 @@ input::placeholder
 /*---------- SECTION ACTIVITES ----------*/
 #sectionactivites
 {
-    margin: 0px 54px 60px 50px;
+    margin: 0px 54px 65px 50px;
     width: 1336px;
     height: 488px;
     display: flex;
     flex-direction: column;
+
 }
 
 #sectionactivites h2
@@ -396,34 +397,88 @@ input::placeholder
     padding-bottom: 25px;
 }
 
+/*"masonry layout" en Flexbox*/
 #containercard3
 {
-    background-color: red;
-    height: 445px;
+    height: 444px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-content: space-between;
+    flex-flow: column wrap;
 }
 
 #containercard3 .cardstyle
 {
-    border: none; 
+    width: 302px;
+    margin: 0;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    flex-direction: column;
 }
 
-#containercard3 img
+/*définition des hauteurs de cartes différentes*/
+#containercard3 .cardstyle:nth-child(1), #containercard3 .cardstyle:nth-child(4)
 {
-    border-radius: 20px 20px 0px 0px;
+    height: 100%;
 }
 
+#containercard3 .cardstyle:nth-child(2)
+{
+    height: 52.93%;
+}
 
+#containercard3 .cardstyle:nth-child(3)
+{
+    height: 37.16%;
+}
 
+#containercard3 .cardstyle:nth-child(5) 
+{
+    height: 43.69%;
+}
 
+#containercard3 .cardstyle:nth-child(6) 
+{
+    height: 47.07%;
+}
 
+/*définition des hauteurs d'images différentes*/
+.imagesactivites
+{
+    width: 100%;
+    object-fit: cover;
+}
 
+#imgport, #imgcalanques
+{
+    height: 388px;
+}
 
+#imgpomegues
+{
+    height: 179px;
+}
 
+#imgfrioul
+{
+    height: 108px;
+}
 
+#imgdame
+{
+    height: 138px;
+}
 
+#imglonchamp
+{
+    height: 152px;
+}
+
+figcaption
+{
+    padding: 17px 19px;
+}
 
 /*--------------------------- FOOTER ---------------------------*/
 /* positionnement des éléments dans le footer */
@@ -440,7 +495,7 @@ input::placeholder
 #footerpage a
 {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 #footerpage ul
@@ -469,7 +524,3 @@ input::placeholder
     width: 400px;
     padding-left: 50px;
 }
-
-
-
-
