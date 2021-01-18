@@ -223,7 +223,7 @@ body
 /*---------- SECTION HEBERGEMENT ----------*/
 #sectionhebergement
 {
-    margin: 37px 50px 64px 50px;
+    margin: 37px 50px 60px 50px;
     width: 1340px;
     height: 626px;
     display: flex;
@@ -381,7 +381,7 @@ body
 /*---------- SECTION ACTIVITES ----------*/
 #sectionactivites
 {
-    margin: 0px 54px 60px 50px;
+    margin: 0px 54px 65px 50px;
     width: 1336px;
     height: 488px;
     display: flex;
@@ -400,7 +400,7 @@ body
 /*"masonry layout" en Flexbox*/
 #containercard3
 {
-    height: 445px;
+    height: 444px;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -425,22 +425,22 @@ body
 
 #containercard3 .cardstyle:nth-child(2)
 {
-    height: 53%;
+    height: 52.93%;
 }
 
 #containercard3 .cardstyle:nth-child(3)
 {
-    height: 37%;
+    height: 37.16%;
 }
 
 #containercard3 .cardstyle:nth-child(5) 
 {
-    height: 44%;
+    height: 43.69%;
 }
 
 #containercard3 .cardstyle:nth-child(6) 
 {
-    height: 47%;
+    height: 47.07%;
 }
 
 /*définition des hauteurs d'images différentes*/
@@ -452,32 +452,32 @@ body
 
 #imgport, #imgcalanques
 {
-    height: 389px;
+    height: 388px;
 }
 
 #imgpomegues
 {
-    height: 180px;
+    height: 179px;
 }
 
 #imgfrioul
 {
-    height: 110px;
+    height: 108px;
 }
 
 #imgdame
 {
-    height: 140px;
+    height: 138px;
 }
 
 #imglonchamp
 {
-    height: 155px;
+    height: 152px;
 }
 
 figcaption
 {
-    padding: 20px;
+    padding: 17px 19px;
 }
 
 /*--------------------------- FOOTER ---------------------------*/
