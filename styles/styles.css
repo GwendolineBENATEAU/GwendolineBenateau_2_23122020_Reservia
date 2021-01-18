@@ -22,7 +22,6 @@ body
 /* positionnements du menu de navigation */
 #menunav
 {
-    /*background-color: aqua;*/
     width: 435px;
     display: flex;
     justify-content: space-between;
@@ -39,13 +38,11 @@ body
 #menunav a:hover#signup
 {
     border-top: 0px;
-    color: #0065FC;
 }
 
 /* particularités générales du menu de navigation */
 #menunav li
 {
-    /*background-color: grey;*/
     list-style: none;
     font-weight: 500;
     font-size: 16px;
@@ -54,13 +51,13 @@ body
 #menunav a
 {
     text-decoration: none;
-    color: black;
+    color: inherit;
     padding: 30px;
 }
 
 #menunav a:visited
 {
-    color: black;
+    color: inherit;
 }
 
 /* Barre bleue au survol des élements du menu de navigation */
@@ -269,7 +266,7 @@ input::placeholder
 .cardstyle a
 {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 .textcardstyle h4, .textcardstyle p
@@ -496,7 +493,7 @@ figcaption
 #footerpage a
 {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 #footerpage ul
