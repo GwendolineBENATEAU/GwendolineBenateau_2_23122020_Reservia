@@ -1,4 +1,4 @@
-/*Général*/
+/*Style général du site*/
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -177,6 +177,12 @@ body
 .filters h3
 {
     padding: 0px 18px 0px 12px;
+}
+
+/* écrasement latéral du picto monnaie*/
+.fa-money-bill-wave 
+{
+    transform: scale(0.7, 1.0);
 }
 
 /*changement apparence au survol des filtres*/
@@ -518,7 +524,3 @@ figcaption
     width: 400px;
     padding-left: 50px;
 }
-
-
-
-
