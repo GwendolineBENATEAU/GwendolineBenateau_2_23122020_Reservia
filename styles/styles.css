@@ -1,4 +1,4 @@
-/*Style général du site*/
+/* Style général du site */
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -7,10 +7,9 @@ body
     background-color: #ffffff;
     width: 1440px;
     margin: 0 auto;
-    padding: 0px;
 }
 
-/*--------------------------- HEADER + NAV ---------------------------*/
+/* HEADER + NAV */
 /* positionnement des éléments dans le header */
 #headerpage 
 {
@@ -19,7 +18,7 @@ body
     margin: 47px 50px 34px 52px;
 }
 
-/* positionnements du menu de navigation */
+/* positionnement du menu de navigation */
 #menunav
 {
     width: 440px;
@@ -27,18 +26,6 @@ body
     justify-content: space-between;
     padding: 0; 
     margin: 0;
-}
-
-/* particularités de l'élément 'S'incrire' du menu de navigation */
-#menunav #signup
-{
-    color: #0065FC;
-    font-weight: 700;
-}
-
-#menunav a:hover#signup
-{
-    border-top: 0px;
 }
 
 /* particularités générales du menu de navigation */
@@ -60,7 +47,7 @@ body
     color: inherit;
 }
 
-/* Barre bleue au survol des élements du menu de navigation */
+/* barre bleue au survol des éléments 'Hébergement' et 'Activités' */
 #menunav a:hover
 {
     border-top: 2px solid #0065FC;
@@ -68,12 +55,23 @@ body
     color: #0065FC;
 }
 
-/*--------------------------- MAIN ---------------------------*/
-/*-------- SECTION RECHERCHE + FILTRES --------*/
-/*header de la section*/
+/* particularités de l'élément 'S'incrire' du menu de navigation */
+#menunav #signup
+{
+    color: #0065FC;
+    font-weight: 700;
+}
+
+#menunav a:hover#signup
+{
+    border-top: 0;
+}
+
+/* MAIN - SECTION RECHERCHE + FILTRES */
+/* header de la section */
 #sectionrecherche header h2
 {  
-    margin: 0px 50px 0px 55px;
+    margin: 0 55px;
     font-size: 22px;
     font-weight: 800;
 }
@@ -84,11 +82,11 @@ body
     font-weight: 500;
 }
 
-/*champs de recherche en 3 parties*/
+/* champs de recherche en 3 parties */
 #recherche
 {
     width: 420px;
-    margin: 0px 50px 0px 53px;
+    margin: 0 50px 0 53px;
     font-size: 18px;
     display: flex;
 }
@@ -101,14 +99,14 @@ body
     align-items: center;
     justify-content: space-around;
     background-color: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
 }
 
 #recherche input
 {
     width: 218px;
     height: 48px;
-    padding: 0px 0px 0px 17px;
+    padding: 0 0 0 17px;
     border : 1px solid #F2F2F2; 
     font-weight: 800;
     font-size: 18px;
@@ -127,17 +125,17 @@ body
     height: 50px;
     border-style: none;
     background-color: #0065FC;
-    border-radius: 0px 13px 13px 0px;
+    border-radius: 0 13px 13px 0;
     color: white;
     font-weight: 600;
     font-size: 18px;
     font-family: inherit;
 }
 
-/*ligne des filtres*/
+/* ligne des filtres */
 #filters 
 {
-    margin: 31px 0px 0px 63px;
+    margin: 31px 0 0 63px;
     width: 930px;
     height: 50px;
     display: flex;
@@ -177,29 +175,29 @@ body
 
 .filters h3
 {
-    padding: 0px 18px 0px 12px;
+    padding: 0 18px 0 12px;
 }
 
-/* écrasement latéral du picto monnaie*/
+/* écrasement latéral du picto monnaie */
 .fa-money-bill-wave 
 {
     transform: scale(0.7, 1.0);
 }
 
-/*changement apparence au survol des filtres*/
+/* changement apparence au survol des filtres */
 .filters:hover
 {
-    box-shadow: 0px 0px 20px 1px #D9D9D9;
+    box-shadow: 0 0 20px 1px #D9D9D9;
     transition: 0.3s ease-out;
     transform: scale(1.1);
 }
 
-/*ligne information*/
+/* ligne information */
 #information 
 {
     display: flex;
     align-items: center;
-    margin: 35px 50px 0px 59px;
+    margin: 35px 50px 0 59px;
 }
 
 #information i 
@@ -217,11 +215,11 @@ body
 
 #information p
 {
-    margin: 0px 0px 0px 12px;
+    margin: 0 0 0 12px;
     font-weight: 500;
 }
 
-/*---------- SECTION HEBERGEMENT ----------*/
+/* MAIN - SECTION HEBERGEMENT */
 #sectionhebergement
 {
     margin: 37px 50px 60px 50px;
@@ -256,13 +254,13 @@ body
     padding-left: 4px;
 }
 
-/*carte d'hébergement style général*/
+/* carte d'hébergement style général */
 .cardstyle
 {
     background-color: #FFF;
     border-radius: 20px;
     border: 5px solid #FFF; 
-    box-shadow: 0px 5px 10px #D9D9D9;
+    box-shadow: 0 5px 10px #D9D9D9;
 }
 
 .cardstyle a
@@ -283,7 +281,7 @@ body
     font-weight: 800;
 }
 
-/*étoiles de notation*/
+/* étoiles de notation */
 .star 
 {
     color: #0065FC;
@@ -298,7 +296,7 @@ body
     color: #D9D9D9;
 }
 
-/*spécificités article hébergement à Marseille*/
+/* spécificités de l'article hébergement à Marseille */
 #containercard1
 {
     width: 800px;
@@ -311,7 +309,7 @@ body
 
 .imagehebergement1
 {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
     height: 113px;
     width: 236px;
     object-fit: cover;
@@ -332,7 +330,7 @@ body
     padding-top: 5px;    
 }
 
-/*spécificités aside les plus populaires*/
+/* spécificités du aside les plus populaires */
 #populaires
 {
     width: 343px;
@@ -359,7 +357,7 @@ body
 
 .imagehebergement2
 {
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
     height: 134px;
     width: 127px;
     object-fit: cover;
@@ -379,10 +377,10 @@ body
     padding-top: 30px;    
 }
 
-/*---------- SECTION ACTIVITES ----------*/
+/* SECTION ACTIVITES */
 #sectionactivites
 {
-    margin: 0px 54px 65px 50px;
+    margin: 0 54px 65px 50px;
     width: 1336px;
     height: 488px;
     display: flex;
@@ -398,7 +396,7 @@ body
     padding-bottom: 25px;
 }
 
-/*"masonry layout" en Flexbox*/
+/* "masonry layout" en Flexbox */
 #containercard3
 {
     height: 444px;
@@ -418,7 +416,7 @@ body
     flex-direction: column;
 }
 
-/*définition des hauteurs de cartes différentes*/
+/* définition des hauteurs de cartes différentes */
 #containercard3 .cardstyle:nth-child(1), #containercard3 .cardstyle:nth-child(4)
 {
     height: 100%;
@@ -444,7 +442,7 @@ body
     height: 47.07%;
 }
 
-/*définition des hauteurs d'images différentes*/
+/* définition des hauteurs d'images différentes */
 .imagesactivites
 {
     width: 100%;
@@ -481,7 +479,7 @@ body
     padding: 17px 19px;
 }
 
-/*--------------------------- FOOTER ---------------------------*/
+/* FOOTER */
 /* positionnement des éléments dans le footer */
 #footerpage 
 {
@@ -507,7 +505,7 @@ body
 #footerpage li
 {
     list-style: none;
-    padding: 8px 0px;
+    padding: 8px 0;
     font-weight: 500;
 }
 
