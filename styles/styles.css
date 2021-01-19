@@ -1,4 +1,4 @@
-/* Style général du site */
+/* Style général défini sur l'ensemble de la page du site */
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -7,6 +7,14 @@ body
     background-color: #ffffff;
     width: 1440px;
     margin: 0 auto;
+}
+
+/* Comportement de l'ensemble de la page du site sur les écrans de largeur max 1440px */
+@media only screen and (max-width: 1440px)
+{    body
+    {
+        width: auto;
+    }
 }
 
 /* HEADER + NAV */
@@ -276,7 +284,7 @@ body
 
 .textcardstyle h4
 {
-    
+
     font-size: 16px;
     font-weight: 800;
 }
@@ -523,3 +531,19 @@ body
     width: 400px;
     padding-left: 50px;
 }
+
+/* Comportement du footer sur les écrans de largeur max 850px */
+@media only screen and (max-width: 850px)
+{    
+    #footerpage 
+    {
+        flex-direction: column;        
+    }
+    .footer_section
+    {
+        padding-left: 30px;
+    }
+}
+
+
+
