@@ -6,7 +6,7 @@ body
     color: #000000;
     background-color: #ffffff;
     width: 1440px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0px;
 }
 
@@ -15,17 +15,18 @@ body
 #headerpage 
 {
     display: flex;
-    justify-content: space-between;  
-    margin: 40px 50px 34px 52px;
+    justify-content: space-between; 
+    margin: 47px 50px 34px 52px;
 }
 
 /* positionnements du menu de navigation */
 #menunav
 {
-    width: 435px;
+    width: 440px;
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    padding: 0; 
+    margin: 0;
 }
 
 /* particularités de l'élément 'S'incrire' du menu de navigation */
@@ -51,7 +52,7 @@ body
 {
     text-decoration: none;
     color: inherit;
-    padding: 30px;
+    padding: 0 30px;
 }
 
 #menunav a:visited
