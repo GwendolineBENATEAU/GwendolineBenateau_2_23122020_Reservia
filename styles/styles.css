@@ -70,21 +70,6 @@ body
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HEADER */
 /* positionnement des éléments dans le header */
 #headerpage 
@@ -94,7 +79,7 @@ body
     margin: 47px 50px 34px 52px;
 }
 
-/* positionnement du menu de navigation */
+/* positionnement des éléments dans le menu de navigation */
 .menunav
 {
     width: 440px;
@@ -144,33 +129,54 @@ body
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin: 21px;
+        padding: 21px;
+        margin: 0;
     }
-    .menunav a:hover/*a finir*/
+
+    .menunav a:hover
     {
         border-top: none;
         padding-top: 0px;
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
         padding-bottom: 15px;
+    }
+
+    .signup a:hover
+    {
+        border-bottom: none;
     }
 }
 
-@media only screen and (max-width: 623px)
+@media only screen and (max-width: 475px)
 {
-    /*faire le nav décalé*/
+    #headerpage
+    {
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+
+    .menunav
+    {
+        width: auto;
+        height: 115px;
+        flex-flow: row-reverse wrap-reverse; 
+        margin-top: -32px;
+    }
+
+    /* inversement de l'ordre dans le menu de navigation */
+    .menunav li:nth-of-type(1)
+    { 
+        order: 2; 
+    }
+    .menunav li:nth-of-type(2)
+    { 
+        order: 1; 
+    }
+    .menunav li:nth-of-type(3)
+    { 
+        order: 3; 
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* MAIN - SECTION RECHERCHE */
 #sectionrecherche
@@ -297,7 +303,7 @@ body
 .informationline 
 {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin: 35px 0 0 9px;
 }
 
@@ -309,8 +315,8 @@ body
     font-size: 12px;
     border: 1px solid #F2F2F2;
     border-radius: 100%;
-    width: 22px;
-    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
     margin-right: 12px;
 }
 
@@ -320,6 +326,10 @@ body
     #sectionrecherche
     {
         margin: 21px;
+    }
+    #sectionrecherche header .titlesection
+    {
+        margin-top: 30px;
     }
 }
 
@@ -336,7 +346,7 @@ body
 {
     .searchbar
     {
-        margin-top: 20px;
+        margin-top: 44px;
     }
 }
 
@@ -394,7 +404,7 @@ body
 {
     .filtersbar 
     {
-        margin-top: 15px;
+        margin-top: 25px;
     }
 }
 
@@ -406,6 +416,7 @@ body
         height: 230px;
     }
 }
+
 @media only screen and (max-width: 425px)
 {
     .filtersbar .textbig:nth-child(1)
@@ -420,38 +431,26 @@ body
     .informationline 
     {
         margin-left: 0;
+        margin-top: 20px;
     }
 }
 
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 425px)
 {
-    .informationline .fa-info
-    {
-        background-color: aqua;
-        width: 22px;
-        height: 22px;
-    }
-}
-/*.informationline 
-{
-display: flex;
-align-items: center;
-width: 450px;
-margin: 35px 0 0 9px;
+
 }
 
-.informationline .fa-info 
-{
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 12px;
-border: 1px solid #F2F2F2;
-border-radius: 100%;
-width: 22px;
-height: 22px;
-margin-right: 12px;
-}*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -616,14 +615,12 @@ margin-right: 12px;
 
     article.containersection
     {
-        background-color: red;
         width: auto;
         height: 775px;
     }
 
     #containercard1
     {
-        background-color: blue;
         width: 525px;
         height: 661px;
         display: flex;
@@ -641,14 +638,12 @@ margin-right: 12px;
 
     article.containersection
     {
-        background-color: red;
         width: auto;
         height: 1347px;
     }
 
     #containercard1
     {
-        background-color: blue;
         width: 246px;
         height: 1233px;
         display: flex;
@@ -768,8 +763,21 @@ margin-right: 12px;
     padding: 17px 19px;
 }
 
-/* comportement de la section activites sur des écrans dont la largeur max est inférieur à 1439px */
-
+/* comportement de la section activités sur des écrans dont la largeur max est inférieur à 1439px */
+@media only screen and (max-width: 1439px)
+{
+    #sectionactivites
+    {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        /*margin: 0 54px 65px 50px;
+        width: 1336px;
+        height: 488px;
+        display: flex;
+        flex-direction: column;*/
+    }
+}
 
 
 
@@ -777,55 +785,43 @@ margin-right: 12px;
 
 
 /* FOOTER */
-/* positionnement des éléments dans le footer */
+/* positionnement des 3 colonnes dans le footer */
 #footerpage 
 {
+    background-color: #F2F2F2;
     display: flex;
-    justify-content: flex-start;
-
     padding-top: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
-/* particularités générales du footer */
-
-
-#footerpage ul
-{
-    padding: 0;
-}
-
-#footerpage li
-{
-
-    padding: 8px 0;
-
-}
-
-#footerpage strong
-{
-    font-size: 18px;
-    font-weight: 800
-}
-
-/* positionnement des 3 div dans le footer */
-.footer_section
-{
+.footercol {
     display: flex;
     flex-direction: column;
     width: 400px;
     padding-left: 50px;
 }
+
+/* positionnement des éléments de navigation dans les colonnes */
+.footernav
+{
+    padding: 0;
+    line-height: 2.2;
+}
+
 /* comportement du footer sur des écrans dont la largeur max est inférieur à 850px */
 @media only screen and (max-width: 850px)
 {    
     #footerpage 
     {
-        flex-direction: column;        
+        flex-direction: column; 
     }
-    .footer_section
+    .footercol 
     {
         padding-left: 30px;
+    }
+    .footernav
+    {
+        margin-top: 10px;
     }
 }
 
