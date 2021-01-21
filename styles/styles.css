@@ -1,4 +1,4 @@
-/* Style général défini sur l'ensemble de la page du site */
+/* Style général défini pour l'ensemble de la page du site */
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -7,6 +7,50 @@ body
     background-color: #ffffff;
     width: 1440px;
     margin: 0 auto;
+}
+
+/* bibliothèque des éléments répétitif selon normalisation oocss */
+.colorblue
+{
+    color: #0065FC;
+}
+
+.bgcgrey
+{
+    background-color: #F2F2F2;
+}
+
+.titlesection
+{
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.textbig
+{
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.textlittle
+{
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.liststyle
+{
+    list-style: none;
+    font-weight: 500;
+}
+
+.linkstyle
+{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* comportement général de la page sur des écrans dont la largeur max est inférieur à 1440px */
@@ -18,7 +62,7 @@ body
     }
 }
 
-/* HEADER + NAV */
+/* HEADER */
 /* positionnement des éléments dans le header */
 #headerpage 
 {
@@ -28,7 +72,7 @@ body
 }
 
 /* positionnement du menu de navigation */
-#menunav
+.menunav
 {
     width: 440px;
     display: flex;
@@ -37,27 +81,19 @@ body
     margin: 0;
 }
 
-/* particularités générales du menu de navigation */
-#menunav li
+.menunav .linkstyle
 {
-    list-style: none;
-    font-weight: 500;
-}
-
-#menunav a
-{
-    text-decoration: none;
-    color: inherit;
     padding: 0 30px;
 }
 
-#menunav a:visited
+/* supression du style des liens visités */
+.menunav a:visited
 {
     color: inherit;
 }
 
 /* barre bleue au survol des éléments 'Hébergement' et 'Activités' */
-#menunav a:hover
+.menunav a:hover
 {
     border-top: 2px solid #0065FC;
     padding-top: 45px;
@@ -65,13 +101,13 @@ body
 }
 
 /* particularités de l'élément 'S'incrire' du menu de navigation */
-#menunav #signup
+.signup
 {
     color: #0065FC;
     font-weight: 700;
 }
 
-#menunav a:hover#signup
+.signup a:hover
 {
     border-top: 0;
 }
@@ -87,17 +123,12 @@ body
         align-items: flex-start;
         margin: 21px;
     }
-    #menunav a:hover
+    .menunav a:hover/*a finir*/
     {
         border-top: none;
         padding-top: 0px;
         border-bottom: 2px solid #0065FC;
         padding-bottom: 15px;
-
-    }
-    #menunav a
-    {
-        padding: 0;
     }
 }
 
@@ -118,58 +149,48 @@ body
 
 
 
-
-/* MAIN - SECTION RECHERCHE + FILTRES */
-/* header de la section */
-#sectionrecherche header h2
+/* MAIN - SECTION RECHERCHE */
+#sectionrecherche
 {  
-    margin: 0 55px;
-    font-size: 22px;
-    font-weight: 800;
+    margin-left: 55px;
 }
 
-#sectionrecherche header p
-{
-    margin: 8px 50px 20px 55px;
-    font-weight: 500;
-}
-
-/* comportement de la partie header de la section recherche sur des écrans dont la largeur max est inférieur à 850px */
+/* marge de la section recherche sur des écrans dont la largeur max est inférieur à 850px */
 @media only screen and (max-width: 850px)
 {
-    #sectionrecherche header h2
+    #sectionrecherche
     {
-        margin: 50px 0 0 21px;
-    }
-
-    #sectionrecherche header p
-    {
-        margin: 8px 0 20px 21px;
-        font-weight: 500;
+        margin-left: 21px;
     }
 }
 
-/* champs de recherche en 3 parties */
-#recherche
+/* positionnement du 1er paragraphe de la section */
+#sectionrecherche .textlittle:nth-of-type(1)
+{
+    margin-top: 13px;
+    margin-bottom: 15px;   
+}
+
+/* barre de recherche en 3 parties */
+.searchbar
 {
     width: 420px;
-    margin: 0 50px 0 53px;
-    font-size: 18px;
+    margin-left: 3px;
     display: flex;
 }
 
-#recherche div
+.iconmmap
 {
     width: 50px;
     height: 50px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
 
-#recherche input
+.input
 {
     width: 218px;
     height: 48px;
@@ -180,60 +201,82 @@ body
     font-family: inherit;
 }
 
-#recherche input::placeholder 
+.input::placeholder 
 {
     color: inherit;
     opacity:  1;/* For Mozilla Firefox */
 }
 
-#recherche button
+.searchbar button
 {
     width: 135px;
     height: 50px;
     border-style: none;
     background-color: #0065FC;
     border-radius: 0 13px 13px 0;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     font-size: 18px;
     font-family: inherit;
 }
 
-/* comportement de la partie champs de recherche sur des écrans dont la largeur max est inférieur à 850px */
+.iconbutton
+{
+    display: none;
+}
+
+/* comportement de la barre de recherche sur des écrans dont la largeur max est inférieur à 850px */
 @media only screen and (max-width: 850px)
 {
-    #recherche
+    .searchbar
     {
-        width: 420px;
-        margin: 0 50px 0 21px;
+        margin-left: 0px;
     }
 }
+
 @media only screen and (max-width: 623px)
 {
-    #recherche
+    .searchbar
     {
         padding-top: 20px;
     }
 }
 
-/* ligne des filtres */
-#filters 
+@media only screen and (max-width: 500px)
 {
-    margin: 31px 0 0 63px;
+    .input
+    {
+        width: 227px;
+    }
+    .searchbar button
+    {
+        width: 51px;
+        margin-left: -17px;
+        border-radius: 17px;
+    }
+    .textbutton
+    {
+        display: none;
+    }
+    .iconbutton
+    {
+        display: block;
+    }
+}
+
+/* ligne des filtres */
+.filtersbar 
+{
     width: 930px;
     height: 50px;
+    margin-left: 13px;
+    margin-top: 31px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#filters h3
-{
-    font-weight: 800;
-    font-size: 18px;
-}
-
-.filters
+.itemfilters
 {
     width: auto;
     height: 46px;
@@ -243,12 +286,11 @@ body
     border-radius: 25px;
 }
 
-.filters div
+.iconfilters
 {
     width: 50px;
     height: 50px;
     font-size: 20px;
-    color: #0065FC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,81 +299,83 @@ body
     margin-left: -2px;
 }
 
-.filters h3
+.itemfilters .textbig
 {
     padding: 0 18px 0 12px;
 }
 
 /* écrasement latéral du picto monnaie */
-.fa-money-bill-wave 
+.slim 
 {
     transform: scale(0.7, 1.0);
 }
 
 /* changement apparence au survol des filtres */
-.filters:hover
+.itemfilters:hover
 {
     box-shadow: 0 0 20px 1px #D9D9D9;
     transition: 0.3s ease-out;
     transform: scale(1.1);
 }
 
-/* comportement de la partie filtres de la section recherche sur des écrans dont la largeur max est inférieur à 1024px */
+/* comportement de la ligne des filtres sur des écrans dont la largeur max est inférieur à 1024px */
 @media only screen and (max-width: 1024px)
 {
-    #filters 
+    .filtersbar 
     {
         width: auto;
+        height: auto;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         flex-wrap: wrap;
-    }
-}
-@media only screen and (max-width: 910px)
-{
-    #filters 
-    {
-        height: 100px;
     }
 }
 @media only screen and (max-width: 850px)
 {
-    #filters 
+    .filtersbar
     {
-        margin-left: 21px;
+        margin-left: 0px;
     }
 }
+
 @media only screen and (max-width: 623px)
 {
-    #filters 
+    .filtersbar 
     {
         margin-top: 15px;
     }
 }
+@media only screen and (max-width: 500px)
+{
+    .filtersbar 
+    {
+        background-color: aqua
+    }
+}
 
-/* ligne information */
-#information 
+
+
+
+/* ligne d'information */
+.informationline 
 {
     display: flex;
     align-items: center;
     margin: 35px 50px 0 59px;
 }
 
-#information i 
+.informationline i 
 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    color: #0065FC;
     border: 1px solid #F2F2F2;
     border-radius: 100%;
     width: 22px;
     height: 22px;
 }
 
-#information p
+.informationline p
 {
     margin: 0 0 0 12px;
     font-weight: 500;
@@ -340,7 +384,7 @@ body
 /* comportement de la partie information de la section recherche sur des écrans dont la largeur max est inférieur à 850px */
 @media only screen and (max-width: 850px)
 {
-    #information 
+    .informationline 
     {
         margin: 35px 50px 0 21px;
     }
@@ -359,23 +403,17 @@ body
 .containersection
 {
     padding: 40px;
-    background-color: #F2F2F2;
     border-radius: 20px;    
 }
 
 .containersection h2
 {
-    font-size: 22px;
-    font-weight: 800;
-    margin: 0;
     padding-left: 1px;
     padding-bottom: 23px;
 }
 
-.containersection h3
+.containersection .textbig
 {
-    font-size: 18px;
-    font-weight: 700;
     margin: 0;
     padding-top: 40px;
     padding-left: 4px;
@@ -388,12 +426,6 @@ body
     border-radius: 20px;
     border: 5px solid #FFF; 
     box-shadow: 0 5px 10px #D9D9D9;
-}
-
-.cardstyle a
-{
-    text-decoration: none;
-    color: inherit;
 }
 
 .textcardstyle h4, .textcardstyle p
@@ -411,16 +443,11 @@ body
 /* étoiles de notation */
 .star 
 {
-    color: #0065FC;
     width: 70px;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-}
-
-.star>.off 
-{
-    color: #D9D9D9;
+    color: #D9D9D9
 }
 
 /* spécificités de l'article hébergement à Marseille */
@@ -581,9 +608,6 @@ body
 
 #sectionactivites h2
 {
-    font-size: 22px;
-    font-weight: 800;
-    margin: 0;
     padding-bottom: 25px;
 }
 
@@ -684,17 +708,13 @@ body
 {
     display: flex;
     justify-content: flex-start;
-    background-color: #F2F2F2;
+
     padding-top: 20px;
     padding-bottom: 25px;
 }
 
 /* particularités générales du footer */
-#footerpage a
-{
-    text-decoration: none;
-    color: inherit;
-}
+
 
 #footerpage ul
 {
@@ -703,9 +723,9 @@ body
 
 #footerpage li
 {
-    list-style: none;
+
     padding: 8px 0;
-    font-weight: 500;
+
 }
 
 #footerpage strong
