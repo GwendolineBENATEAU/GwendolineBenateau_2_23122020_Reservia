@@ -297,7 +297,7 @@ body
 .informationline 
 {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin: 35px 0 0 9px;
 }
 
@@ -309,8 +309,8 @@ body
     font-size: 12px;
     border: 1px solid #F2F2F2;
     border-radius: 100%;
-    width: 22px;
-    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
     margin-right: 12px;
 }
 
@@ -423,46 +423,10 @@ body
     }
 }
 
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 425px)
 {
-    .informationline .fa-info
-    {
-        background-color: aqua;
-        width: 22px;
-        height: 22px;
-    }
+
 }
-/*.informationline 
-{
-display: flex;
-align-items: center;
-width: 450px;
-margin: 35px 0 0 9px;
-}
-
-.informationline .fa-info 
-{
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 12px;
-border: 1px solid #F2F2F2;
-border-radius: 100%;
-width: 22px;
-height: 22px;
-margin-right: 12px;
-}*/
-
-
-
-
-
-
-
-
-
-
-
 
 /* MAIN - SECTION HEBERGEMENT */
 #sectionhebergement
@@ -616,14 +580,14 @@ margin-right: 12px;
 
     article.containersection
     {
-        background-color: red;
+
         width: auto;
         height: 775px;
     }
 
     #containercard1
     {
-        background-color: blue;
+
         width: 525px;
         height: 661px;
         display: flex;
@@ -641,14 +605,14 @@ margin-right: 12px;
 
     article.containersection
     {
-        background-color: red;
+
         width: auto;
         height: 1347px;
     }
 
     #containercard1
     {
-        background-color: blue;
+
         width: 246px;
         height: 1233px;
         display: flex;
@@ -777,55 +741,43 @@ margin-right: 12px;
 
 
 /* FOOTER */
-/* positionnement des éléments dans le footer */
+/* positionnement des 3 colonnes dans le footer */
 #footerpage 
 {
+    background-color: #F2F2F2;
     display: flex;
-    justify-content: flex-start;
-
     padding-top: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
-/* particularités générales du footer */
-
-
-#footerpage ul
-{
-    padding: 0;
-}
-
-#footerpage li
-{
-
-    padding: 8px 0;
-
-}
-
-#footerpage strong
-{
-    font-size: 18px;
-    font-weight: 800
-}
-
-/* positionnement des 3 div dans le footer */
-.footer_section
-{
+.footercol {
     display: flex;
     flex-direction: column;
     width: 400px;
     padding-left: 50px;
 }
+
+/* positionnement des éléments de navigation dans les colonnes */
+.footernav
+{
+    padding: 0;
+    line-height: 2.2;
+}
+
 /* comportement du footer sur des écrans dont la largeur max est inférieur à 850px */
 @media only screen and (max-width: 850px)
 {    
     #footerpage 
     {
-        flex-direction: column;        
+        flex-direction: column; 
     }
-    .footer_section
+    .footercol 
     {
         padding-left: 30px;
+    }
+    .footernav
+    {
+        margin-top: 10px;
     }
 }
 
