@@ -1,4 +1,4 @@
-/* Style général du site */
+/* Style général défini pour l'ensemble de la page du site */
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -9,7 +9,68 @@ body
     margin: 0 auto;
 }
 
-/* HEADER + NAV */
+/* bibliothèque des éléments répétitif selon normalisation oocss */
+.colorblue
+{
+    color: #0065FC;
+}
+
+.bgcgrey
+{
+    background-color: #F2F2F2;
+}
+
+.titlesection
+{
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.textbig
+{
+    font-weight: 800;
+    font-size: 18px;
+    margin: 0;
+}
+
+.textlittle
+{
+    font-weight: 500;
+    margin: 0;
+}
+
+.liststyle
+{
+    list-style: none;
+    font-weight: 500;
+}
+
+.linkstyle
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* comportement général de la page sur des écrans dont la largeur max est inférieur à 1439px */
+@media only screen and (max-width: 1439px)
+{
+    body
+    {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 425px)
+{
+    body
+    {
+        width: 375px;
+    }
+}
+
+/* HEADER */
 /* positionnement des éléments dans le header */
 #headerpage 
 {
@@ -18,8 +79,8 @@ body
     margin: 47px 50px 34px 52px;
 }
 
-/* positionnement du menu de navigation */
-#menunav
+/* positionnement des éléments dans le menu de navigation */
+.menunav
 {
     width: 440px;
     display: flex;
@@ -28,27 +89,19 @@ body
     margin: 0;
 }
 
-/* particularités générales du menu de navigation */
-#menunav li
+.menunav .linkstyle
 {
-    list-style: none;
-    font-weight: 500;
-}
-
-#menunav a
-{
-    text-decoration: none;
-    color: inherit;
     padding: 0 30px;
 }
 
-#menunav a:visited
+/* supression du style des liens visités */
+.menunav a:visited
 {
     color: inherit;
 }
 
 /* barre bleue au survol des éléments 'Hébergement' et 'Activités' */
-#menunav a:hover
+.menunav a:hover
 {
     border-top: 2px solid #0065FC;
     padding-top: 45px;
@@ -56,53 +109,108 @@ body
 }
 
 /* particularités de l'élément 'S'incrire' du menu de navigation */
-#menunav #signup
+.signup
 {
     color: #0065FC;
     font-weight: 700;
 }
 
-#menunav a:hover#signup
+.signup a:hover
 {
-    border-top: 0;
+    border-top: none;
 }
 
-/* MAIN - SECTION RECHERCHE + FILTRES */
-/* header de la section */
-#sectionrecherche header h2
+/* comportement du header sur des écrans dont la largeur max est inférieur à 850px */
+@media only screen and (max-width: 850px)
+{
+    #headerpage 
+    {
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 21px;
+        margin: 0;
+    }
+
+    .menunav a:hover
+    {
+        border-top: none;
+        padding-top: 0px;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 15px;
+    }
+
+    .signup a:hover
+    {
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 475px)
+{
+    #headerpage
+    {
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+
+    .menunav
+    {
+        width: auto;
+        height: 115px;
+        flex-flow: row-reverse wrap-reverse; 
+        margin-top: -32px;
+    }
+
+    /* inversement de l'ordre dans le menu de navigation */
+    .menunav li:nth-of-type(1)
+    { 
+        order: 2; 
+    }
+    .menunav li:nth-of-type(2)
+    { 
+        order: 1; 
+    }
+    .menunav li:nth-of-type(3)
+    { 
+        order: 3; 
+    }
+}
+
+/* MAIN - SECTION RECHERCHE */
+#sectionrecherche
 {  
-    margin: 0 55px;
-    font-size: 22px;
-    font-weight: 800;
+    margin-left: 55px;
+    margin-right: 50px;
 }
 
-#sectionrecherche header p
+#sectionrecherche header .textlittle
 {
-    margin: 8px 50px 20px 55px;
-    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 20px      
 }
 
-/* champs de recherche en 3 parties */
-#recherche
+/* barre de recherche en 3 parties */
+.searchbar
 {
     width: 420px;
-    margin: 0 50px 0 53px;
-    font-size: 18px;
+    margin-left: 3px;
     display: flex;
 }
 
-#recherche div
+.iconmmap
 {
     width: 50px;
     height: 50px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
 
-#recherche input
+.input
 {
     width: 218px;
     height: 48px;
@@ -113,43 +221,43 @@ body
     font-family: inherit;
 }
 
-#recherche input::placeholder 
+.input::placeholder 
 {
     color: inherit;
     opacity:  1;/* For Mozilla Firefox */
 }
 
-#recherche button
+.searchbar button
 {
     width: 135px;
     height: 50px;
     border-style: none;
     background-color: #0065FC;
     border-radius: 0 13px 13px 0;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     font-size: 18px;
     font-family: inherit;
 }
 
-/* ligne des filtres */
-#filters 
+.iconbutton
 {
-    margin: 31px 0 0 63px;
+    display: none;
+}
+
+/* ligne des filtres */
+.filtersbar 
+{
     width: 930px;
     height: 50px;
+    margin-left: 13px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#filters h3
-{
-    font-weight: 800;
-    font-size: 18px;
-}
-
-.filters
+.itemfilters
 {
     width: auto;
     height: 46px;
@@ -159,12 +267,11 @@ body
     border-radius: 25px;
 }
 
-.filters div
+.iconfilters
 {
     width: 50px;
     height: 50px;
     font-size: 20px;
-    color: #0065FC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,50 +280,164 @@ body
     margin-left: -2px;
 }
 
-.filters h3
+.itemfilters .textbig
 {
     padding: 0 18px 0 12px;
 }
 
 /* écrasement latéral du picto monnaie */
-.fa-money-bill-wave 
+.slim 
 {
     transform: scale(0.7, 1.0);
 }
 
 /* changement apparence au survol des filtres */
-.filters:hover
+.itemfilters:hover
 {
     box-shadow: 0 0 20px 1px #D9D9D9;
     transition: 0.3s ease-out;
     transform: scale(1.1);
 }
 
-/* ligne information */
-#information 
+/* ligne d'information */
+.informationline 
 {
     display: flex;
-    align-items: center;
-    margin: 35px 50px 0 59px;
+    align-items: baseline;
+    margin: 35px 0 0 9px;
 }
 
-#information i 
+.informationline .fa-info 
 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    color: #0065FC;
     border: 1px solid #F2F2F2;
     border-radius: 100%;
-    width: 22px;
-    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+    margin-right: 12px;
 }
 
-#information p
+/* comportement de la section recherche sur des écrans dont la largeur max est inférieur à 850px */
+@media only screen and (max-width: 850px)
 {
-    margin: 0 0 0 12px;
-    font-weight: 500;
+    #sectionrecherche
+    {
+        margin: 21px;
+    }
+    #sectionrecherche header .titlesection
+    {
+        margin-top: 30px;
+    }
+}
+
+/* comportement de la barre de recherche sur des écrans dont la largeur max est inférieur à 850px */
+@media only screen and (max-width: 850px)
+{
+    .searchbar
+    {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 623px)
+{
+    .searchbar
+    {
+        margin-top: 44px;
+    }
+}
+
+@media only screen and (max-width: 475px)
+{
+    .searchbar
+    {
+        width: 333px;
+    }
+
+    .input
+    {
+        width: 227px;
+    }
+
+    .searchbar button
+    {
+        width: 51px;
+        margin-left: -17px;
+        border-radius: 17px;
+    }
+
+    .textbutton
+    {
+        display: none;
+    }
+
+    .iconbutton
+    {
+        display: block;
+    }
+}
+
+/* comportement de la ligne des filtres sur des écrans dont la largeur max est inférieur à 1024px */
+@media only screen and (max-width: 1024px)
+{
+    .filtersbar 
+    {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 850px)
+{
+    .filtersbar
+    {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 623px)
+{
+    .filtersbar 
+    {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 491px)
+{
+    .filtersbar 
+    {
+        width: 350px;
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 425px)
+{
+    .filtersbar .textbig:nth-child(1)
+    {
+        margin-right: 200px;
+    }
+}
+
+/* comportement de la ligne d'information de la section recherche sur des écrans dont la largeur max est inférieur à 850px */
+@media only screen and (max-width: 850px)
+{
+    .informationline 
+    {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px)
+{
+
 }
 
 /* MAIN - SECTION HEBERGEMENT */
@@ -232,23 +453,17 @@ body
 .containersection
 {
     padding: 40px;
-    background-color: #F2F2F2;
     border-radius: 20px;    
 }
 
 .containersection h2
 {
-    font-size: 22px;
-    font-weight: 800;
-    margin: 0;
     padding-left: 1px;
     padding-bottom: 23px;
 }
 
-.containersection h3
+.containersection .textbig
 {
-    font-size: 18px;
-    font-weight: 700;
     margin: 0;
     padding-top: 40px;
     padding-left: 4px;
@@ -263,12 +478,6 @@ body
     box-shadow: 0 5px 10px #D9D9D9;
 }
 
-.cardstyle a
-{
-    text-decoration: none;
-    color: inherit;
-}
-
 .textcardstyle h4, .textcardstyle p
 {
     margin: 0;
@@ -276,7 +485,7 @@ body
 
 .textcardstyle h4
 {
-    
+
     font-size: 16px;
     font-weight: 800;
 }
@@ -284,16 +493,11 @@ body
 /* étoiles de notation */
 .star 
 {
-    color: #0065FC;
     width: 70px;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-}
-
-.star>.off 
-{
-    color: #D9D9D9;
+    color: #D9D9D9
 }
 
 /* spécificités de l'article hébergement à Marseille */
@@ -377,6 +581,67 @@ body
     padding-top: 30px;    
 }
 
+/* comportement de la section hébergement sur des écrans dont la largeur max est inférieur à 1439px */
+@media only screen and (max-width: 1439px)
+{
+    #sectionhebergement
+    {
+        width: auto;
+        height: 856px;
+    }
+
+    article.containersection
+    {
+        width: auto;
+        height: 775px;
+    }
+
+    #containercard1
+    {
+        width: 525px;
+        height: 661px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1180px)
+{
+    #sectionhebergement
+    {
+        width: auto;
+        height: 1428px;
+    }
+
+    article.containersection
+    {
+        width: auto;
+        height: 1347px;
+    }
+
+    #containercard1
+    {
+        width: 246px;
+        height: 1233px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 940px)
+{
+    /*passer populaire au dessus puis reduire marge gauche*/
+}
+
+
+
+
+
+
+
+
+
+
 /* SECTION ACTIVITES */
 #sectionactivites
 {
@@ -385,14 +650,10 @@ body
     height: 488px;
     display: flex;
     flex-direction: column;
-
 }
 
 #sectionactivites h2
 {
-    font-size: 22px;
-    font-weight: 800;
-    margin: 0;
     padding-bottom: 25px;
 }
 
@@ -479,47 +740,84 @@ body
     padding: 17px 19px;
 }
 
+/* comportement de la section activités sur des écrans dont la largeur max est inférieur à 1439px */
+@media only screen and (max-width: 1439px)
+{
+    #sectionactivites
+    {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        /*margin: 0 54px 65px 50px;
+        width: 1336px;
+        height: 488px;
+        display: flex;
+        flex-direction: column;*/
+    }
+}
+
+
+
+
+
+
 /* FOOTER */
-/* positionnement des éléments dans le footer */
+/* positionnement des 3 colonnes dans le footer */
 #footerpage 
 {
-    display: flex;
-    justify-content: flex-start;
     background-color: #F2F2F2;
+    display: flex;
     padding-top: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
-/* particularités générales du footer */
-#footerpage a
-{
-    text-decoration: none;
-    color: inherit;
-}
-
-#footerpage ul
-{
-    padding: 0;
-}
-
-#footerpage li
-{
-    list-style: none;
-    padding: 8px 0;
-    font-weight: 500;
-}
-
-#footerpage strong
-{
-    font-size: 18px;
-    font-weight: 800
-}
-
-/* positionnement des 3 div dans le footer */
-.footer_section
-{
+.footercol {
     display: flex;
     flex-direction: column;
     width: 400px;
     padding-left: 50px;
 }
+
+/* positionnement des éléments de navigation dans les colonnes */
+.footernav
+{
+    padding: 0;
+    line-height: 2.2;
+}
+
+/* comportement du footer sur des écrans dont la largeur max est inférieur à 850px */
+@media only screen and (max-width: 850px)
+{    
+    #footerpage 
+    {
+        flex-direction: column; 
+    }
+    .footercol 
+    {
+        padding-left: 30px;
+    }
+    .footernav
+    {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
