@@ -435,6 +435,27 @@ body
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MAIN - SECTION HEBERGEMENT */
 #sectionhebergement
 {
@@ -576,6 +597,7 @@ body
     padding-top: 30px;    
 }
 
+/*-----------------------------------------------*/
 /* comportement de la section hébergement sur des écrans dont la largeur max est inférieur à 1439px */
 @media only screen and (max-width: 1439px)
 {
@@ -627,6 +649,12 @@ body
 {
     /*passer populaire au dessus puis reduire marge gauche*/
 }
+
+
+
+
+
+
 
 
 
