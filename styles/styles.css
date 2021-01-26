@@ -69,7 +69,7 @@ body
         width: 375px;
     }
 }
-
+/*-----------------------------------------------------*/
 /* HEADER */
 /* positionnement des éléments dans le header */
 #headerpage 
@@ -178,6 +178,7 @@ body
     }
 }
 
+/*-----------------------------------------------------*/
 /* MAIN - SECTION RECHERCHE */
 #sectionrecherche
 {  
@@ -435,143 +436,174 @@ body
     }
 }
 
+/*-----------------------------------------------------*/
 /* MAIN - SECTION HEBERGEMENT */
 #sectionhebergement
 {
     margin: 37px 50px 60px 50px;
-    width: 1340px;
-    height: 626px;
+    max-width: 1340px;
+    min-height: 626px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-content: space-between;
 }
 
-.containersection
+/* container à bords arrondis avec du padding interne et son contenu */
+/*container*/
+.containerarrondi
 {
     padding: 40px;
     border-radius: 20px;    
 }
-
-.containersection h2
+/*titres*/
+.containerarrondi .titlesection
 {
     padding-left: 1px;
     padding-bottom: 23px;
 }
-
-.containersection .textbig
+/*picto*/
+#populaires>div
+{
+    max-width: 343px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+/*afficherplus*/
+.containerarrondi .textbig
 {
     margin: 0;
     padding-top: 40px;
     padding-left: 4px;
 }
 
-/* carte d'hébergement style général */
-.cardstyle
+/* spécificités du container à bords arrondis hébergement */
+#hebergements.containerarrondi
+{
+    width: 59.71%;
+    margin-right: 40px;
+}
+
+/* spécificités du container à bords arrondis populaire */
+#populaires.containerarrondi
+{
+    width: 340px;
+}
+
+/* container de cartes */
+/* spécificités du container de cartes hébergement */
+.containercard-col3
+{
+    max-width: 800px;
+    min-height: 430px;
+    display: flex;
+    flex-flow: wrap; 
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+/* spécificités du container de cartes populaire */
+.containercard-col1
+{
+    height: 498px;
+    margin-left: -3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+/* cartes à bords arrondis blanc ombre et leurs contenus */
+/*carte*/
+.cardcontenu
 {
     background-color: #FFF;
     border-radius: 20px;
     border: 5px solid #FFF; 
     box-shadow: 0 5px 10px #D9D9D9;
+    display: flex;
 }
-
-.textcardstyle h4, .textcardstyle p
+/*image*/
+.cardimg
+{
+    object-fit: cover;
+}
+/*texte*/
+.cardtext
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
+/*titre*/
+.cardtext h4
 {
     margin: 0;
-}
-
-.textcardstyle h4
-{
-
     font-size: 16px;
     font-weight: 800;
 }
-
-/* étoiles de notation */
-.star 
+/*paragraphe*/
+.cardtext p
+{
+    margin: 0;
+}
+/*barre d'étoiles*/
+.starbar
 {
     width: 70px;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    color: #D9D9D9
+    color: #D9D9D9;
 }
 
-/* spécificités de l'article hébergement à Marseille */
-#containercard1
+/* spécificités à l'interieur de la carte hébergement */
+#hebergements .cardcontenu
 {
-    width: 800px;
-    height: 430px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;   
+    flex-direction: column;
 }
 
-.imagehebergement1
+#hebergements .cardimg
 {
     border-radius: 15px 15px 0 0;
     height: 113px;
     width: 236px;
-    object-fit: cover;
 }
 
-#containercard1 .textcardstyle 
+#hebergements .cardtext 
 {
     padding: 7px 11px;
-    height: 57px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 14px;
+    height: 57px; 
 }
 
-#containercard1 .star
+#hebergements .starbar
 {
     padding-top: 5px;    
 }
 
-/* spécificités du aside les plus populaires */
-#populaires
+/* spécificités à l'interieur de la carte populaire */
+#populaires .cardcontenu
 {
-    width: 343px;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#containercard2
-{
-    width: 343px;
-    height: 498px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;     
-}
-
-#containercard2 a
-{
+    flex-direction: row;
     width: 333px;
     height: 134px;
-    display: flex;
 }
 
-.imagehebergement2
+#populaires .cardimg
 {
     border-radius: 15px 0 0 15px;
     height: 134px;
     width: 127px;
-    object-fit: cover;
 }
 
-#containercard2 .textcardstyle 
+#populaires .cardtext 
 {
-    padding: 12px 40px 8px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 14px;
+    padding: 12px 40px 8px 20px; 
 }
 
-#containercard2 .star
+#populaires .starbar
 {
     padding-top: 30px;    
 }
@@ -579,158 +611,145 @@ body
 /* comportement de la section hébergement sur des écrans dont la largeur max est inférieur à 1439px */
 @media only screen and (max-width: 1439px)
 {
-    #sectionhebergement
+    .containercard-col3
     {
-        width: auto;
-        height: 856px;
+        margin-left: -40px;
     }
 
-    article.containersection
+    .containercard-col3 > *
     {
-        width: auto;
-        height: 775px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        min-width: calc(50% - 40px);
     }
 
-    #containercard1
+    .containerarrondi .textbig
     {
-        width: 525px;
-        height: 661px;
-        display: flex;
-        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #hebergements .cardcontenu
+    {
+        min-width: 235px;
+    }
+
+    #hebergements .cardimg
+    {
+        width: auto;
     }
 }
 
-@media only screen and (max-width: 1180px)
+@media only screen and (max-width: 1186px)
+{
+    .containercard-col3 > *
+    {
+        min-width: calc(100% - 40px);
+    }
+
+    #hebergements .cardcontenu
+    {
+        min-width: 320px;
+    }
+}
+
+@media only screen and (max-width: 992px)
 {
     #sectionhebergement
     {
-        width: auto;
-        height: 1428px;
+        flex-direction: column-reverse;
     }
 
-    article.containersection
+    #hebergements.containerarrondi
     {
-        width: auto;
-        height: 1347px;
-    }
-
-    #containercard1
-    {
-        width: 246px;
-        height: 1233px;
-        display: flex;
-        flex-direction: column;
+        width: 340px;
+        margin-right: 0;
+        background-color: #FFF;
     }
 }
 
-@media only screen and (max-width: 940px)
+@media only screen and (max-width: 850px)
 {
-    /*passer populaire au dessus puis reduire marge gauche*/
+    #sectionhebergement
+    {
+        margin: 0;
+    }
 }
 
+@media only screen and (max-width: 425px)
+{
+    .containerarrondi
+    {
+        padding: 38px 18px;
+        border-radius: 0;    
+    }
 
+    .containercard-col3
+    {
+        height: 1225px;
+    }
 
+    .containercard-col1
+    {
+        height: 453px;
+    }
 
+    .containercard-col3
+    {
+        margin-left: 0;
+    }
 
+    .containercard-col3 > *
+    {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
 
+    .containerarrondi .textbig
+    {
+        padding-top: 30px;
+    }
+}
 
-
-
-
-/* SECTION ACTIVITES */
+/*-----------------------------------------------------*/
+/* MAIN - SECTION ACTIVITES */
 #sectionactivites
 {
-    margin: 0 54px 65px 50px;
-    width: 1336px;
-    height: 488px;
+    margin: 0 54px 12px 50px;
+    max-width: 1336px;
+    min-height: 488px;
     display: flex;
     flex-direction: column;
 }
 
-#sectionactivites h2
+#sectionactivites .titlesection
 {
     padding-bottom: 25px;
 }
 
-/* "masonry layout" en Flexbox */
-#containercard3
+/* spécificités du container de cartes activités type "masonry grid layout" */
+.containercard-col4
 {
-    height: 444px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-flow: column wrap;
+    column-gap: 45px;
+    column-count: 4;
 }
 
-#containercard3 .cardstyle
+/* spécificités à l'interieur de la carte activités */
+#activites .cardcontenu
 {
-    width: 302px;
-    margin: 0;
-    overflow: hidden;
     border: none;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    min-width: 302px;
+    max-height: 444px;
+    overflow: hidden;
+    margin-bottom: 40px;
 }
 
-/* définition des hauteurs de cartes différentes */
-#containercard3 .cardstyle:nth-child(1), #containercard3 .cardstyle:nth-child(4)
-{
-    height: 100%;
-}
-
-#containercard3 .cardstyle:nth-child(2)
-{
-    height: 52.93%;
-}
-
-#containercard3 .cardstyle:nth-child(3)
-{
-    height: 37.16%;
-}
-
-#containercard3 .cardstyle:nth-child(5) 
-{
-    height: 43.69%;
-}
-
-#containercard3 .cardstyle:nth-child(6) 
-{
-    height: 47.07%;
-}
-
-/* définition des hauteurs d'images différentes */
-.imagesactivites
+#activites .cardimg
 {
     width: 100%;
-    object-fit: cover;
 }
 
-#imgport, #imgcalanques
-{
-    height: 388px;
-}
-
-#imgpomegues
-{
-    height: 179px;
-}
-
-#imgfrioul
-{
-    height: 108px;
-}
-
-#imgdame
-{
-    height: 138px;
-}
-
-#imglonchamp
-{
-    height: 152px;
-}
-
-#containercard3 .textcardstyle
+#activites .cardtext
 {
     padding: 17px 19px;
 }
@@ -738,24 +757,60 @@ body
 /* comportement de la section activités sur des écrans dont la largeur max est inférieur à 1439px */
 @media only screen and (max-width: 1439px)
 {
-    #sectionactivites
+    .containercard-col4
     {
-        width: auto;
-        height: auto;
-        flex-wrap: wrap;
-        /*margin: 0 54px 65px 50px;
-        width: 1336px;
-        height: 488px;
-        display: flex;
-        flex-direction: column;*/
+        column-count: 3;
     }
 }
 
+@media only screen and (max-width: 1186px)
+{
+    .containercard-col4
+    {
+        column-count: 2;
+    }
+}
 
+@media only screen and (max-width: 992px)
+{
+    .containercard-col4
+    {
+        column-count: 1;
+        width: 380px;
+    }
+}
 
+@media only screen and (max-width: 850px)
+{
+    #sectionactivites
+    {
+        margin: 0;
+        padding: 13px 20px;
+    }
 
+    #sectionactivites .titlesection
+    {
+        padding-bottom: 30px;
+    }
+}
 
+@media only screen and (max-width: 425px)
+{
+    .containercard-col4
+    {
+        width: 335px;
+    }
+    #activites .cardcontenu
+    {
+        margin-bottom: 20px;
+    }
+    #activites .cardimg
+    {
+        height: 133px;
+    }
+}
 
+/*-----------------------------------------------------*/
 /* FOOTER */
 /* positionnement des 3 colonnes dans le footer */
 #footerpage 
