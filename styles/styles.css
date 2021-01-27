@@ -428,8 +428,18 @@ body
 {
     #sectionrecherche
     {
-        padding: 21px;
+        padding-left: 21px;
         max-width: 333px;
+    }
+    
+    .filtersbar
+    {
+        width: 330px;
+    }
+    
+    .filtersbar .textbig
+    {
+        font-size: 16px;
     }
 }
 
