@@ -62,13 +62,24 @@ body
     }
 }
 
-@media only screen and (max-width: 425px)
+@media only screen and (max-width: 992px)
+{
+    body
+    {
+        width: 520px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px)
 {
     body
     {
         width: 375px;
+        margin: 0 auto;
     }
 }
+
 /*-----------------------------------------------------*/
 /* HEADER */
 /* positionnement des éléments dans le header */
@@ -76,7 +87,7 @@ body
 {
     display: flex;
     justify-content: space-between; 
-    margin: 47px 50px 34px 52px;
+    padding: 47px 50px 35px 52px;
 }
 
 /* positionnement des éléments dans le menu de navigation */
@@ -120,8 +131,8 @@ body
     border-top: none;
 }
 
-/* comportement du header sur des écrans dont la largeur max est inférieur à 850px */
-@media only screen and (max-width: 850px)
+/* comportement du header sur des écrans dont la largeur max est inférieur à 992px */
+@media only screen and (max-width: 992px)
 {
     #headerpage 
     {
@@ -130,7 +141,7 @@ body
         flex-direction: column;
         align-items: flex-start;
         padding: 21px;
-        margin: 0;
+        padding-bottom: 35px;
     }
 
     .menunav a:hover
@@ -147,12 +158,13 @@ body
     }
 }
 
-@media only screen and (max-width: 475px)
+@media only screen and (max-width: 767px)
 {
     #headerpage
     {
         border-bottom: 3px solid #F2F2F2;
         padding-bottom: 10px;
+        max-width: 333px;
     }
 
     .menunav
@@ -161,6 +173,11 @@ body
         height: 115px;
         flex-flow: row-reverse wrap-reverse; 
         margin-top: -32px;
+    }
+    .menunav a:hover
+    {
+        border-bottom: none;
+        padding-bottom: 0px;
     }
 
     /* inversement de l'ordre dans le menu de navigation */
@@ -182,8 +199,8 @@ body
 /* MAIN - SECTION RECHERCHE */
 #sectionrecherche
 {  
-    margin-left: 55px;
-    margin-right: 50px;
+    padding-left: 55px;
+    padding-right: 50px;
 }
 
 #sectionrecherche header .textlittle
@@ -195,8 +212,7 @@ body
 /* barre de recherche en 3 parties */
 .searchbar
 {
-    width: 420px;
-    margin-left: 3px;
+    width: 420px;   
     display: flex;
 }
 
@@ -251,7 +267,7 @@ body
 {
     width: 930px;
     height: 50px;
-    margin-left: 13px;
+    margin-left: 5px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -305,7 +321,7 @@ body
 {
     display: flex;
     align-items: baseline;
-    margin: 35px 0 0 9px;
+    margin: 35px 0 0 3px;
 }
 
 .informationline .fa-info 
@@ -321,40 +337,38 @@ body
     margin-right: 12px;
 }
 
-/* comportement de la section recherche sur des écrans dont la largeur max est inférieur à 850px */
-@media only screen and (max-width: 850px)
+/* comportement de la section recherche sur des écrans dont la largeur max est inférieur à 1186px */
+@media only screen and (max-width: 1186px)
+{
+    .filtersbar 
+    {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 992px)
 {
     #sectionrecherche
     {
-        margin: 21px;
+        max-width: 420px;
     }
+
     #sectionrecherche header .titlesection
     {
-        margin-top: 30px;
+        margin-top: 10px;
     }
-}
 
-/* comportement de la barre de recherche sur des écrans dont la largeur max est inférieur à 850px */
-@media only screen and (max-width: 850px)
-{
+    #sectionrecherche header .textlittle
+    {
+        margin-top: 12px;
+    }
+
     .searchbar
     {
-        margin-left: 0px;
-    }
-}
-
-@media only screen and (max-width: 623px)
-{
-    .searchbar
-    {
-        margin-top: 44px;
-    }
-}
-
-@media only screen and (max-width: 475px)
-{
-    .searchbar
-    {
+        margin-top: 35px;
         width: 333px;
     }
 
@@ -379,60 +393,35 @@ body
     {
         display: block;
     }
-}
 
-/* comportement de la ligne des filtres sur des écrans dont la largeur max est inférieur à 1024px */
-@media only screen and (max-width: 1024px)
-{
-    .filtersbar 
-    {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media only screen and (max-width: 850px)
-{
     .filtersbar
     {
         margin-left: 0px;
-    }
-}
-
-@media only screen and (max-width: 623px)
-{
-    .filtersbar 
-    {
         margin-top: 25px;
-    }
-}
-
-@media only screen and (max-width: 491px)
-{
-    .filtersbar 
-    {
         width: 350px;
         height: 230px;
     }
-}
 
-@media only screen and (max-width: 425px)
-{
     .filtersbar .textbig:nth-child(1)
     {
         margin-right: 200px;
     }
-}
 
-/* comportement de la ligne d'information de la section recherche sur des écrans dont la largeur max est inférieur à 850px */
-@media only screen and (max-width: 850px)
-{
     .informationline 
     {
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        min-width: 340px;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    #sectionrecherche
+    {
+        padding: 21px;
+        max-width: 333px;
     }
 }
 
@@ -440,8 +429,8 @@ body
 /* MAIN - SECTION HEBERGEMENT */
 #sectionhebergement
 {
-    margin: 37px 50px 60px 50px;
-    max-width: 1340px;
+    padding: 37px 50px 60px 50px;
+    max-width: 1440px;
     min-height: 626px;
     display: flex;
     flex-direction: row;
@@ -488,7 +477,7 @@ body
 /* spécificités du container à bords arrondis populaire */
 #populaires.containerarrondi
 {
-    width: 340px;
+    width: 339px;
 }
 
 /* container de cartes */
@@ -657,44 +646,38 @@ body
     #sectionhebergement
     {
         flex-direction: column-reverse;
+        margin: 0;
     }
 
     #hebergements.containerarrondi
     {
-        width: 340px;
+        width: 339px;
         margin-right: 0;
         background-color: #FFF;
     }
 }
 
-@media only screen and (max-width: 850px)
+@media only screen and (max-width: 767px)
 {
     #sectionhebergement
     {
-        margin: 0;
+        padding: 0;
     }
-}
 
-@media only screen and (max-width: 425px)
-{
     .containerarrondi
     {
-        padding: 38px 18px;
+        padding: 35px 18px;
         border-radius: 0;    
+    }
+
+    #populaires.containerarrondi .titlesection
+    {
+        padding-bottom: 30px;
     }
 
     .containercard-col3
     {
         height: 1225px;
-    }
-
-    .containercard-col1
-    {
-        height: 453px;
-    }
-
-    .containercard-col3
-    {
         margin-left: 0;
     }
 
@@ -702,6 +685,11 @@ body
     {
         margin-left: 0;
         margin-bottom: 0;
+    }
+
+    .containercard-col1
+    {
+        height: 453px;
     }
 
     .containerarrondi .textbig
@@ -714,8 +702,8 @@ body
 /* MAIN - SECTION ACTIVITES */
 #sectionactivites
 {
-    margin: 0 54px 12px 50px;
-    max-width: 1336px;
+    padding: 0 52px 12px 50px;
+    max-width: 1440px;
     min-height: 488px;
     display: flex;
     flex-direction: column;
@@ -776,34 +764,32 @@ body
     .containercard-col4
     {
         column-count: 1;
-        width: 380px;
+        width: 420px;
     }
 }
 
-@media only screen and (max-width: 850px)
+@media only screen and (max-width: 767px)
 {
     #sectionactivites
     {
-        margin: 0;
-        padding: 13px 20px;
+        padding: 20px;
     }
 
     #sectionactivites .titlesection
     {
         padding-bottom: 30px;
     }
-}
 
-@media only screen and (max-width: 425px)
-{
     .containercard-col4
     {
         width: 335px;
     }
+
     #activites .cardcontenu
     {
         margin-bottom: 20px;
     }
+
     #activites .cardimg
     {
         height: 133px;
@@ -815,7 +801,6 @@ body
 /* positionnement des 3 colonnes dans le footer */
 #footerpage 
 {
-    background-color: #F2F2F2;
     display: flex;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -835,20 +820,25 @@ body
     line-height: 2.2;
 }
 
-/* comportement du footer sur des écrans dont la largeur max est inférieur à 850px */
-@media only screen and (max-width: 850px)
+/* comportement du footer sur des écrans dont la largeur max est inférieur à 992px */
+@media only screen and (max-width: 992px)
 {    
     #footerpage 
     {
-        flex-direction: column; 
+        flex-direction: column;
     }
-    .footercol 
-    {
-        padding-left: 30px;
-    }
+
     .footernav
     {
         margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .footercol 
+    {
+        padding-left: 30px;
     }
 }
 
