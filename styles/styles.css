@@ -62,23 +62,23 @@ body
     }
 }
 
-@media only screen and (max-width: 992px)
+/*@media only screen and (max-width: 992px)
 {
-    body
-    {
-        width: 520px;
-        margin: 0 auto;
-    }
+body
+{
+width: 520px;
+margin: 0 auto;
+}
 }
 
 @media only screen and (max-width: 767px)
 {
-    body
-    {
-        width: 375px;
-        margin: 0 auto;
-    }
+body
+{
+width: 375px;
+margin: 0 auto;
 }
+}*/
 
 /*-----------------------------------------------------*/
 /* HEADER */
@@ -428,18 +428,8 @@ body
 {
     #sectionrecherche
     {
-        padding-left: 21px;
+        padding: 21px;
         max-width: 333px;
-    }
-    
-    .filtersbar
-    {
-        width: 330px;
-    }
-    
-    .filtersbar .textbig
-    {
-        font-size: 16px;
     }
 }
 
@@ -652,30 +642,53 @@ body
     {
         min-width: calc(100% - 40px);
     }
-
-    #hebergements .cardcontenu
-    {
-        min-width: 320px;
-    }
 }
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 938px)
 {
     #sectionhebergement
     {
         flex-direction: column-reverse;
-        margin: 0;
     }
 
     #hebergements.containerarrondi
     {
-        width: 339px;
+        width: auto;
         margin-right: 0;
         background-color: #FFF;
     }
+
+    #populaires.containerarrondi
+    {
+        width: auto;
+    }
+
+    #populaires>div 
+    {
+        max-width: 750px;
+    }
+
+    #populaires .cardcontenu
+    {
+        width: auto;
+    }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 532px)
+{
+    #populaires .cardtext
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #populaires .cardimg
+    {
+        width: 100px
+    }
+}
+
+@media only screen and (max-width: 480px)
 {
     #sectionhebergement
     {
@@ -684,37 +697,65 @@ body
 
     .containerarrondi
     {
-        padding: 35px 18px;
-        border-radius: 0;    
+        border-radius: 0; 
+    }
+}
+
+@media only screen and (max-width: 415px)
+{
+    #hebergements.containerarrondi
+    {
+        padding: 20px;
+        padding-bottom: 33px;
     }
 
-    #populaires.containerarrondi .titlesection
+    .containerarrondi .textbig
     {
-        padding-bottom: 30px;
-    }
-
-    .containercard-col3
-    {
-        height: 1225px;
-        margin-left: 0;
+        padding-top: 20px;
     }
 
     .containercard-col3 > *
     {
-        margin-left: 0;
-        margin-bottom: 0;
+        margin-bottom: 0px;
+        height: 210px;
+    }
+
+    #populaires.containerarrondi
+    {
+        padding: 20px;
+        padding-bottom: 33px;
+    }
+
+    #populaires .cardcontenu
+    {
+        min-width: 235px;
+    }
+
+    #populaires.containerarrondi .titlesection
+    {
+        padding-top: 18px;
+        padding-bottom: 30px;
     }
 
     .containercard-col1
     {
         height: 453px;
     }
-
-    .containerarrondi .textbig
+    
+    #hebergements .cardcontenu
     {
-        padding-top: 30px;
+        min-width: 332px;
     }
 }
+
+@media only screen and (max-width: 375px)
+{
+    #populaires.containerarrondi 
+    {
+        width: 339px;
+    }
+}
+
 
 /*-----------------------------------------------------*/
 /* MAIN - SECTION ACTIVITES */
@@ -769,7 +810,7 @@ body
     }
 }
 
-@media only screen and (max-width: 1186px)
+@media only screen and (max-width: 1115px)
 {
     .containercard-col4
     {
@@ -777,16 +818,15 @@ body
     }
 }
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 767px)
 {
     .containercard-col4
     {
         column-count: 1;
-        width: 420px;
     }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 415px)
 {
     #sectionactivites
     {
@@ -822,9 +862,11 @@ body
     display: flex;
     padding-top: 20px;
     padding-bottom: 30px;
+    min-width: 380px;
 }
 
-.footercol {
+.footercol 
+{
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -839,11 +881,16 @@ body
 }
 
 /* comportement du footer sur des écrans dont la largeur max est inférieur à 992px */
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 852px)
 {    
     #footerpage 
     {
         flex-direction: column;
+    }
+
+    .footercol 
+    {
+        width: auto;
     }
 
     .footernav
@@ -852,7 +899,7 @@ body
     }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 415px)
 {
     .footercol 
     {
