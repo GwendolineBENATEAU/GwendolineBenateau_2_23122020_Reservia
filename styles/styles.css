@@ -9,6 +9,16 @@ body
     margin: 0 auto;
 }
 
+/* comportement général de la page sur des écrans dont la largeur max est inférieur à 1439px */
+@media only screen and (max-width: 1439px)
+{
+    body
+    {
+        width: auto;
+    }
+}
+
+/*-----------------------------------------------------*/
 /* bibliothèque des éléments répétitif selon normalisation oocss */
 .colorblue
 {
@@ -51,33 +61,6 @@ body
 {
     text-decoration: none;
     color: inherit;
-}
-
-/* comportement général de la page sur des écrans dont la largeur max est inférieur à 1439px */
-@media only screen and (max-width: 1439px)
-{
-    body
-    {
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 992px)
-{
-    body
-    {
-        width: 520px;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 767px)
-{
-    body
-    {
-        width: 375px;
-        margin: 0 auto;
-    }
 }
 
 /*-----------------------------------------------------*/
@@ -132,7 +115,7 @@ body
 }
 
 /* comportement du header sur des écrans dont la largeur max est inférieur à 992px */
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 938px)
 {
     #headerpage 
     {
@@ -162,23 +145,22 @@ body
     }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 500px)
 {
     #headerpage
     {
         border-bottom: 3px solid #F2F2F2;
         padding-bottom: 10px;
-        max-width: 375px;
-        padding: 21px 21px 10px 21px;
+        padding-right: 50px;
     }
 
     .menunav
     {
-        width: auto;
+        width: 375px;
         height: 115px;
         flex-flow: row-reverse wrap-reverse; 
         margin-top: -32px;
-        margin-right: -21px;
+        margin-left: 0;
     }
 
     /* inversement de l'ordre dans le menu de navigation */
@@ -200,7 +182,21 @@ body
         padding-right: 50px;
         padding-left: 50px;
     }
+}
 
+@media only screen and (max-width: 415px)
+{
+    #headerpage
+    {
+        padding: 30px 21px 10px 21px;
+        min-width: 375px; 
+    }
+
+    .menunav
+    {
+        width: 417px;
+        margin-left: -21px;
+    }
 }
 
 /*-----------------------------------------------------*/
@@ -346,7 +342,7 @@ body
 }
 
 /* comportement de la section recherche sur des écrans dont la largeur max est inférieur à 1186px */
-@media only screen and (max-width: 1186px)
+@media only screen and (max-width: 1060px)
 {
     .filtersbar 
     {
@@ -357,18 +353,24 @@ body
     }
 }
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 956px)
 {
-    #sectionrecherche
+    .filtersbar
     {
-        max-width: 420px;
+        height: 130px;
     }
+}
 
+@media only screen and (max-width: 938px)
+{
     #sectionrecherche header .titlesection
     {
         margin-top: 10px;
     }
+}
 
+@media only screen and (max-width: 560px)
+{
     #sectionrecherche header .textlittle
     {
         margin-top: 12px;
@@ -405,9 +407,14 @@ body
     .filtersbar
     {
         margin-left: 0px;
-        margin-top: 25px;
-        width: 350px;
+        margin-top: 22px;
+        width: 330px; 
         height: 230px;
+    }
+
+    .itemfilters .textbig
+    {
+        font-size: 16px;
     }
 
     .filtersbar .textbig:nth-child(1)
@@ -419,18 +426,17 @@ body
     {
         margin-left: 0;
         margin-top: 25px;
-        margin-bottom: 15px;
-        min-width: 340px;
     }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 415px)
 {
     #sectionrecherche
     {
         padding: 21px;
-        max-width: 333px;
+        padding-bottom: 0;
     }
+
 }
 
 /*-----------------------------------------------------*/
@@ -457,7 +463,7 @@ body
 .containerarrondi .titlesection
 {
     padding-left: 1px;
-    padding-bottom: 23px;
+    padding-bottom: 25px;
 }
 /*picto*/
 #populaires>div
@@ -595,9 +601,10 @@ body
     width: 127px;
 }
 
-#populaires .cardtext 
+#populaires .cardtext
 {
-    padding: 12px 40px 8px 20px; 
+    padding: 12px 40px 8px 20px;
+    width: 146px;
 }
 
 #populaires .starbar
@@ -642,57 +649,116 @@ body
     {
         min-width: calc(100% - 40px);
     }
-
-    #hebergements .cardcontenu
-    {
-        min-width: 320px;
-    }
 }
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 938px)
 {
     #sectionhebergement
     {
         flex-direction: column-reverse;
-        margin: 0;
     }
 
     #hebergements.containerarrondi
     {
-        width: 339px;
+        width: auto;
         margin-right: 0;
         background-color: #FFF;
     }
+
+    #populaires.containerarrondi
+    {
+        width: auto;
+    }
+
+    #populaires>div 
+    {
+        max-width: 750px;
+    }
+
+    #populaires .cardcontenu
+    {
+        width: auto;
+    }
+
+    #populaires .cardtext
+    {
+        width: auto;
+        padding-right: 15px;
+    }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 553px)
+{
+    #populaires .cardtext
+    {
+        padding-left: 15px;
+    }
+
+    #populaires .cardimg
+    {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px)
 {
     #sectionhebergement
     {
         padding: 0;
+        padding-top: 37px;
     }
 
     .containerarrondi
     {
-        padding: 35px 18px;
-        border-radius: 0;    
+        border-radius: 0; 
+    }
+}
+
+@media only screen and (max-width: 415px)
+{
+    #hebergements.containerarrondi
+    {
+        padding: 40px 20px 33px 20px;
     }
 
-    #populaires.containerarrondi .titlesection
+    .containerarrondi .textbig
     {
-        padding-bottom: 30px;
-    }
-
-    .containercard-col3
-    {
-        height: 1225px;
-        margin-left: 0;
+        padding-top: 20px;
     }
 
     .containercard-col3 > *
     {
-        margin-left: 0;
-        margin-bottom: 0;
+        margin-bottom: 0px;
+        height: 210px;
+    }
+
+    #populaires.containerarrondi
+    {
+        padding: 20px;
+        padding-bottom: 33px;
+        min-width: 380px;
+    }
+
+    #populaires .cardcontenu
+    {
+        min-width: 235px;
+    } 
+
+    #populaires .cardimg
+    {
+        width: 143px;
+    }
+
+    #populaires .cardtext
+    {
+        padding-right: 40px;
+        padding-left: 20px;
+    }
+
+    #populaires.containerarrondi .titlesection
+    {
+        padding-top: 18px;
+        padding-bottom: 30px;
     }
 
     .containercard-col1
@@ -700,9 +766,9 @@ body
         height: 453px;
     }
 
-    .containerarrondi .textbig
+    #hebergements .cardcontenu
     {
-        padding-top: 30px;
+        min-width: 332px;
     }
 }
 
@@ -759,7 +825,7 @@ body
     }
 }
 
-@media only screen and (max-width: 1186px)
+@media only screen and (max-width: 1115px)
 {
     .containercard-col4
     {
@@ -767,16 +833,15 @@ body
     }
 }
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 767px)
 {
     .containercard-col4
     {
         column-count: 1;
-        width: 420px;
     }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 415px)
 {
     #sectionactivites
     {
@@ -814,7 +879,8 @@ body
     padding-bottom: 30px;
 }
 
-.footercol {
+.footercol 
+{
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -829,11 +895,16 @@ body
 }
 
 /* comportement du footer sur des écrans dont la largeur max est inférieur à 992px */
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 852px)
 {    
     #footerpage 
     {
         flex-direction: column;
+    }
+
+    .footercol 
+    {
+        width: 250px;
     }
 
     .footernav
@@ -842,30 +913,15 @@ body
     }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 415px)
 {
+    #footerpage 
+    {
+        width: 420px;
+    }
+    
     .footercol 
     {
         padding-left: 30px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
