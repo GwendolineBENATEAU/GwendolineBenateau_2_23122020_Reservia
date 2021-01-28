@@ -188,8 +188,8 @@ body
 {
     #headerpage
     {
-        padding: 21px 21px 10px 21px;
-        min-width: 375px;
+        padding: 30px 21px 10px 21px;
+        min-width: 375px; 
     }
 
     .menunav
@@ -463,7 +463,7 @@ body
 .containerarrondi .titlesection
 {
     padding-left: 1px;
-    padding-bottom: 23px;
+    padding-bottom: 25px;
 }
 /*picto*/
 #populaires>div
@@ -601,9 +601,10 @@ body
     width: 127px;
 }
 
-#populaires .cardtext 
+#populaires .cardtext
 {
-    padding: 12px 40px 8px 20px; 
+    padding: 12px 40px 8px 20px;
+    width: 146px;
 }
 
 #populaires .starbar
@@ -678,19 +679,24 @@ body
     {
         width: auto;
     }
+
+    #populaires .cardtext
+    {
+        width: auto;
+        padding-right: 15px;
+    }
 }
 
-@media only screen and (max-width: 532px)
+@media only screen and (max-width: 553px)
 {
     #populaires .cardtext
     {
-        padding-right: 15px;
         padding-left: 15px;
     }
 
     #populaires .cardimg
     {
-        width: 100px
+        width: 100px;
     }
 }
 
@@ -712,8 +718,7 @@ body
 {
     #hebergements.containerarrondi
     {
-        padding: 20px;
-        padding-bottom: 33px;
+        padding: 40px 20px 33px 20px;
     }
 
     .containerarrondi .textbig
@@ -737,6 +742,17 @@ body
     #populaires .cardcontenu
     {
         min-width: 235px;
+    } 
+
+    #populaires .cardimg
+    {
+        width: 143px;
+    }
+
+    #populaires .cardtext
+    {
+        padding-right: 40px;
+        padding-left: 20px;
     }
 
     #populaires.containerarrondi .titlesection
@@ -861,7 +877,6 @@ body
     display: flex;
     padding-top: 20px;
     padding-bottom: 30px;
-
 }
 
 .footercol 
@@ -889,7 +904,7 @@ body
 
     .footercol 
     {
-        width: auto;
+        width: 250px;
     }
 
     .footernav
@@ -900,10 +915,11 @@ body
 
 @media only screen and (max-width: 415px)
 {
-    #footerpage
+    #footerpage 
     {
-        width: 380px;
+        width: 420px;
     }
+    
     .footercol 
     {
         padding-left: 30px;
