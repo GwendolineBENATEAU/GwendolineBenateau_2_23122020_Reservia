@@ -9,6 +9,16 @@ body
     margin: 0 auto;
 }
 
+/* comportement général de la page sur des écrans dont la largeur max est inférieur à 1439px */
+@media only screen and (max-width: 1439px)
+{
+    body
+    {
+        width: auto;
+    }
+}
+
+/*-----------------------------------------------------*/
 /* bibliothèque des éléments répétitif selon normalisation oocss */
 .colorblue
 {
@@ -52,33 +62,6 @@ body
     text-decoration: none;
     color: inherit;
 }
-
-/* comportement général de la page sur des écrans dont la largeur max est inférieur à 1439px */
-@media only screen and (max-width: 1439px)
-{
-    body
-    {
-        width: auto;
-    }
-}
-
-/*@media only screen and (max-width: 992px)
-{
-body
-{
-width: 520px;
-margin: 0 auto;
-}
-}
-
-@media only screen and (max-width: 767px)
-{
-body
-{
-width: 375px;
-margin: 0 auto;
-}
-}*/
 
 /*-----------------------------------------------------*/
 /* HEADER */
@@ -132,7 +115,7 @@ margin: 0 auto;
 }
 
 /* comportement du header sur des écrans dont la largeur max est inférieur à 992px */
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 938px)
 {
     #headerpage 
     {
@@ -162,23 +145,22 @@ margin: 0 auto;
     }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 500px)
 {
     #headerpage
     {
         border-bottom: 3px solid #F2F2F2;
         padding-bottom: 10px;
-        max-width: 375px;
-        padding: 21px 21px 10px 21px;
+        padding-right: 50px;
     }
 
     .menunav
     {
-        width: auto;
+        width: 375px;
         height: 115px;
         flex-flow: row-reverse wrap-reverse; 
         margin-top: -32px;
-        margin-right: -21px;
+        margin-left: 0;
     }
 
     /* inversement de l'ordre dans le menu de navigation */
@@ -200,7 +182,21 @@ margin: 0 auto;
         padding-right: 50px;
         padding-left: 50px;
     }
+}
 
+@media only screen and (max-width: 415px)
+{
+    #headerpage
+    {
+        padding: 21px 21px 10px 21px;
+        min-width: 375px;
+    }
+
+    .menunav
+    {
+        width: 417px;
+        margin-left: -21px;
+    }
 }
 
 /*-----------------------------------------------------*/
@@ -346,7 +342,7 @@ margin: 0 auto;
 }
 
 /* comportement de la section recherche sur des écrans dont la largeur max est inférieur à 1186px */
-@media only screen and (max-width: 1186px)
+@media only screen and (max-width: 1060px)
 {
     .filtersbar 
     {
@@ -357,18 +353,24 @@ margin: 0 auto;
     }
 }
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 956px)
 {
-    #sectionrecherche
+    .filtersbar
     {
-        max-width: 420px;
+        height: 130px;
     }
+}
 
+@media only screen and (max-width: 938px)
+{
     #sectionrecherche header .titlesection
     {
         margin-top: 10px;
     }
+}
 
+@media only screen and (max-width: 560px)
+{
     #sectionrecherche header .textlittle
     {
         margin-top: 12px;
@@ -405,9 +407,14 @@ margin: 0 auto;
     .filtersbar
     {
         margin-left: 0px;
-        margin-top: 25px;
-        width: 350px;
+        margin-top: 22px;
+        width: 330px; 
         height: 230px;
+    }
+
+    .itemfilters .textbig
+    {
+        font-size: 16px;
     }
 
     .filtersbar .textbig:nth-child(1)
@@ -419,18 +426,17 @@ margin: 0 auto;
     {
         margin-left: 0;
         margin-top: 25px;
-        margin-bottom: 15px;
-        min-width: 340px;
     }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 415px)
 {
     #sectionrecherche
     {
         padding: 21px;
-        max-width: 333px;
+        padding-bottom: 0;
     }
+
 }
 
 /*-----------------------------------------------------*/
@@ -693,6 +699,7 @@ margin: 0 auto;
     #sectionhebergement
     {
         padding: 0;
+        padding-top: 37px;
     }
 
     .containerarrondi
@@ -724,6 +731,7 @@ margin: 0 auto;
     {
         padding: 20px;
         padding-bottom: 33px;
+        min-width: 380px;
     }
 
     #populaires .cardcontenu
@@ -741,21 +749,12 @@ margin: 0 auto;
     {
         height: 453px;
     }
-    
+
     #hebergements .cardcontenu
     {
         min-width: 332px;
     }
 }
-
-@media only screen and (max-width: 375px)
-{
-    #populaires.containerarrondi 
-    {
-        width: 339px;
-    }
-}
-
 
 /*-----------------------------------------------------*/
 /* MAIN - SECTION ACTIVITES */
@@ -862,7 +861,7 @@ margin: 0 auto;
     display: flex;
     padding-top: 20px;
     padding-bottom: 30px;
-    min-width: 380px;
+
 }
 
 .footercol 
@@ -901,28 +900,12 @@ margin: 0 auto;
 
 @media only screen and (max-width: 415px)
 {
+    #footerpage
+    {
+        width: 380px;
+    }
     .footercol 
     {
         padding-left: 30px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
