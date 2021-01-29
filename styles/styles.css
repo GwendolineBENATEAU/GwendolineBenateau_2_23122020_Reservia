@@ -115,7 +115,7 @@ body
 }
 
 /* comportement du header sur des écrans dont la largeur max est inférieur à 992px */
-@media only screen and (max-width: 938px)
+@media only screen and (max-width: 939px)
 {
     #headerpage 
     {
@@ -344,7 +344,7 @@ body
 }
 
 /* comportement de la section recherche sur des écrans dont la largeur max est inférieur à 1186px */
-@media only screen and (max-width: 1060px)
+@media only screen and (max-width: 1050px)
 {
     .filtersbar 
     {
@@ -355,23 +355,20 @@ body
     }
 }
 
-@media only screen and (max-width: 956px)
+@media only screen and (max-width: 939px)
 {
     .filtersbar
     {
         height: 130px;
     }
-}
 
-@media only screen and (max-width: 938px)
-{
     #sectionrecherche header .titlesection
     {
         margin-top: 10px;
     }
 }
 
-@media only screen and (max-width: 560px)
+@media only screen and (max-width: 542px)
 {
     #sectionrecherche header .textlittle
     {
@@ -653,7 +650,7 @@ body
     }
 }
 
-@media only screen and (max-width: 938px)
+@media only screen and (max-width: 939px)
 {
     #sectionhebergement
     {
@@ -689,20 +686,7 @@ body
     }
 }
 
-@media only screen and (max-width: 553px)
-{
-    #populaires .cardtext
-    {
-        padding-left: 15px;
-    }
-
-    #populaires .cardimg
-    {
-        width: 100px;
-    }
-}
-
-@media only screen and (max-width: 480px)
+@media only screen and (max-width: 537px)
 {
     #sectionhebergement
     {
@@ -734,27 +718,16 @@ body
         height: 210px;
     }
 
+    #hebergements .cardcontenu
+    {
+        min-width: 325px;
+    }
+    
     #populaires.containerarrondi
     {
         padding: 20px;
         padding-bottom: 33px;
         min-width: 335px;
-    }
-
-    #populaires .cardcontenu
-    {
-        min-width: 235px;
-    } 
-
-    #populaires .cardimg
-    {
-        width: 143px;
-    }
-
-    #populaires .cardtext
-    {
-        padding-right: 40px;
-        padding-left: 20px;
     }
 
     #populaires.containerarrondi .titlesection
@@ -766,12 +739,14 @@ body
     .containercard-col1
     {
         height: 453px;
+        min-width: 300px;
     }
 
-    #hebergements .cardcontenu
+     #populaires .cardcontenu
     {
-        min-width: 332px;
+        min-width: 300px;
     }
+
 }
 
 /*-----------------------------------------------------*/
@@ -922,7 +897,7 @@ body
     {
         min-width: 375px;
     }
-    
+
     .footercol 
     {
         padding-left: 30px;
