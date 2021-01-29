@@ -194,7 +194,7 @@ body
 
     .menunav
     {
-        width: 417px;
+        min-width: 375px;
         margin-left: -21px;
     }
 }
@@ -340,7 +340,7 @@ body
     border-radius: 100%;
     min-width: 22px;
     min-height: 22px;
-    margin-right: 12px;
+    margin-right: 9px;
 }
 
 /* comportement de la section recherche sur des écrans dont la largeur max est inférieur à 1186px */
@@ -738,7 +738,7 @@ body
     {
         padding: 20px;
         padding-bottom: 33px;
-        min-width: 380px;
+        min-width: 335px;
     }
 
     #populaires .cardcontenu
@@ -863,6 +863,7 @@ body
     #activites .cardcontenu
     {
         margin-bottom: 20px;
+        min-width: 335px;
     }
 
     #activites .cardimg
@@ -919,7 +920,7 @@ body
 {
     #footerpage 
     {
-        width: 420px;
+        min-width: 375px;
     }
     
     .footercol 
