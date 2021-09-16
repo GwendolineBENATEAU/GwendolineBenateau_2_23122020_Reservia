@@ -1,7 +1,8 @@
 # Reservia
 *Réservia est le premier projet fictif à caractère pédagique de la formation de Dévéloppeur Web (OpenClassRooms) qui consiste à transformez une maquette en site web.*
 
-## Scénario
+## Projet
+### Scénario
 Reservia est une petite entreprise proposant un outil web de planification de vacances. Leur plateforme permet aux usagers de trouver et réserver des hébergements et des activités dans la ville de leur choix...[lire la suite](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020/blob/master/design/maquettes_desktop.png)
 
 ### Objectif
@@ -12,6 +13,7 @@ Réalisation d'un prototype responsive de l'une des pages web du site Reservia, 
 - Mettre en place son environnement Front-End
 - Intégrer du contenu conformément à une maquette
 - Implémenter une interface responsive
+
 
 ## Outils de développement
 - [Brackets](https://brackets.io/) - Editeur de texte open source
