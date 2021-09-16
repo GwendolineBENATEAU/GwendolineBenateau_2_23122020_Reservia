@@ -35,8 +35,8 @@ Réalisation d'un prototype responsive de l'une des pages web du site Reservia, 
 - Google Font
 
 ## Présentation
-- Visualisation du prototype en ligne [GitHub Page](https://gwendolinebenateau.github.io/GwendolineBenateau_2_23122020_Reservia/)
-- Slides de présentation du projet [Diaporama Reservia](https://www.canva.com/design/DAEUuQVDajs/yBXliDr-x9TNP3d36TNQZw/view?utm_content=DAEUuQVDajs&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
+- Visualisation du prototype en ligne sur [GitHub Page](https://gwendolinebenateau.github.io/GwendolineBenateau_2_23122020_Reservia/)
+- Diaporama de présentation du projet [Reservia](https://www.canva.com/design/DAEUuQVDajs/yBXliDr-x9TNP3d36TNQZw/view?utm_content=DAEUuQVDajs&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
 
 ## Auteurs
 Gwendoline Bénteau
