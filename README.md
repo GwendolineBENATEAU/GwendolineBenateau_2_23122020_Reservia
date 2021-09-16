@@ -1,3 +1,6 @@
+![Reservia](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020_Reservia/blob/master/doc/Pr%C3%A9sentation%20projet%202.gif)
+
+
 # Reservia
 Réservia est le premier projet fictif à caractère pédagique de la formation de Dévéloppeur Web (OpenClassRooms) qui consiste à transformez une maquette en site web.
 
