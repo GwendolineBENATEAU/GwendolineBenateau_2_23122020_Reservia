@@ -31,7 +31,7 @@ Réalisation d'un prototype responsive de l'une des pages web du site Reservia, 
 
 ## Présentation
 - Visualisation du prototype en ligne [GitHub Page](https://gwendolinebenateau.github.io/GwendolineBenateau_2_23122020/)
-- Slides de présentation du projet pour la soutenance [Diaporama P1](https://www.canva.com/design/DAEUuQVDajs/yBXliDr-x9TNP3d36TNQZw/view?utm_content=DAEUuQVDajs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+- Slides de présentation du projet pour la soutenance [Diaporama Reservia](https://www.canva.com/design/DAEUuQVDajs/yBXliDr-x9TNP3d36TNQZw/view?utm_content=DAEUuQVDajs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 ## Auteurs
 Gwendoline Bénteau
