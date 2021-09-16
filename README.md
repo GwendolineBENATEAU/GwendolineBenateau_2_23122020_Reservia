@@ -35,9 +35,9 @@ Réalisation d'un prototype responsive de l'une des pages web du site Reservia, 
 
 ## Auteurs
 **Gwendoline Bénteau**
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
-![image]({[https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white})
-<img src="{https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white}" />
+[![forthebadge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](http://forthebadge.com)
+
+
 
 
 [https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white](https://github.com/GwendolineBENATEAU) / [https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white](https://www.instagram.com/web_doline/) / [https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white](https://www.linkedin.com/in/gwendoline-benateau-18986412b/)
