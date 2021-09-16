@@ -34,4 +34,8 @@ Réalisation d'un prototype responsive de l'une des pages web du site Reservia, 
 - Slides de présentation du projet pour la soutenance [Diaporama P1](https://www.canva.com/design/DAEUuQVDajs/yBXliDr-x9TNP3d36TNQZw/view?utm_content=DAEUuQVDajs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 ## Auteurs
-**Gwendoline Bénteau** [https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white](https://github.com/GwendolineBENATEAU) / [https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white](https://www.instagram.com/web_doline/) / [https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white](https://www.linkedin.com/in/gwendoline-benateau-18986412b/)
+**Gwendoline Bénteau**
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+![image]({[https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white})(https://github.com/GwendolineBENATEAU)
+
+[https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white](https://github.com/GwendolineBENATEAU) / [https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white](https://www.instagram.com/web_doline/) / [https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white](https://www.linkedin.com/in/gwendoline-benateau-18986412b/)
