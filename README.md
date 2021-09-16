@@ -3,10 +3,10 @@ Réservia est le premier projet fictif à caractère pédagique de la formation 
 
 ## Description du projet
 ### Scénario
-Reservia est une petite entreprise proposant un outil web de planification de vacances. Leur plateforme permet aux usagers de trouver et réserver des hébergements et des activités dans la ville de leur choix...[lire la suite](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020/blob/master/design/maquettes_desktop.png)
+Reservia est une petite entreprise proposant un outil web de planification de vacances. Leur plateforme permet aux usagers de trouver et réserver des hébergements et des activités dans la ville de leur choix... ([lire la suite](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020/blob/master/doc/DW_Projet1_OpenClassrooms.pdf))
 
 ### Objectif
-Réalisation d'un prototype responsive de l'une des pages web du site Reservia, selon maquettes [desktop](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020/blob/master/design/maquettes_desktop.png) et [mobiles](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020/blob/master/design/maquette_iphone8.png) basées sur les principes du Material Design, en HTML et CSS sans framework ou pré-compilateur CSS.
+Réalisation d'un prototype responsive de l'une des pages web du site Reservia, selon maquettes [desktop](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020/blob/master/doc/maquettes_desktop.png) et [mobiles](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020/blob/master/doc/maquette_iphone8.png) basées sur les principes du Material Design, en HTML et CSS sans framework ou pré-compilateur CSS.
 
 ### Compétences évaluées
 - Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
