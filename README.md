@@ -1,4 +1,4 @@
-![Reservia](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020_Reservia/blob/master/doc/Pr%C3%A9sentation%20projet%202.gif)
+![Reservia](https://github.com/GwendolineBENATEAU/GwendolineBenateau_2_23122020_Reservia/blob/master/doc/Pr%C3%A9sentation%20projet%202.jpg)
 
 
 # Reservia
