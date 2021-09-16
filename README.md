@@ -22,8 +22,8 @@ Réalisation d'un prototype responsive de l'une des pages web du site Reservia, 
 ## Stack technique et add-on
 - HTML5
 - CSS3 
-`* Disposition avec Flexbox + Multi-column Layout`
-`* Breakpoints avec Media Queries `
+* Disposition avec Flexbox + Multi-column Layout
+* Breakpoints avec Media Queries
 - Convention OOCSS
 - Validation W3C
 - Compatibilité Chrome et Firefox (dernières versions)
