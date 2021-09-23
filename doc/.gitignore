@@ -1,0 +1,4 @@
+# le contenu du dossier doc ne sera pas cloné
+
+*
+!.gitignore
