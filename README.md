@@ -2,7 +2,7 @@
 
 
 # Reservia
-Réservia est le premier projet fictif à caractère pédagogique de la formation de Développeur Web (OpenClassRooms) qui consiste à transformer une maquette en site web.
+Réservia est le premier projet individuel à caractère pédagogique du parcours formation de Développeur Web (OpenClassRooms) qui consiste à transformer une maquette en site web.
 
 
 ## Description du projet
