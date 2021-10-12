@@ -37,8 +37,7 @@ Réalisation d'un prototype responsive de l'une des pages web du site Reservia, 
 ## Présentation du projet
 - Visualisation du prototype en ligne sur [GitHub Page](https://gwendolinebenateau.github.io/GwendolineBenateau_2_23122020_Reservia/)
 - Diaporama de présentation du projet [Reservia](https://www.canva.com/design/DAEUuQVDajs/yBXliDr-x9TNP3d36TNQZw/view?utm_content=DAEUuQVDajs&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
-- Appréciation de l'évaluateur :
-> Florent Boutin "Code propre et bien indenté. Soutenance dans les temps, tout est bien présenté.
+- Appréciation de l'évaluateur : Florent Boutin > "Code propre et bien indenté. Soutenance dans les temps, tout est bien présenté.
 
 ## Auteurs
 Gwendoline Bénateau
